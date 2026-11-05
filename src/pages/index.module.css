@@ -1,23 +1,914 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+.homepage {
+  --home-bg: #fbfaff;
+  --home-panel: #ffffff;
+  --home-text: #11172a;
+  --home-muted: #687087;
+  --home-line: #e9eaf4;
+  color: var(--home-text);
+  background: var(--home-bg);
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 4.75rem 0 0;
+  background:
+    radial-gradient(ellipse at 76% 25%, rgba(191, 190, 255, 0.29), transparent 31rem),
+    radial-gradient(ellipse at 15% 65%, rgba(225, 224, 255, 0.55), transparent 32rem),
+    linear-gradient(180deg, #faf9ff 0%, #f7f7ff 100%);
+}
+
+.heroGlow {
+  position: absolute;
+  z-index: -1;
+  top: 5rem;
+  right: 10%;
+  width: 27rem;
+  height: 27rem;
+  border: 1px solid rgba(79, 70, 229, 0.07);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3.5rem rgba(79, 70, 229, 0.018), 0 0 0 7rem rgba(79, 70, 229, 0.014);
+}
+
+.heroInner {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(19rem, 0.8fr);
+  align-items: center;
+  gap: 2.5rem;
+  max-width: 1200px;
+  min-height: 22rem;
+}
+
+.heroCopy {
+  max-width: 43rem;
+  padding: 1rem 0 2.5rem;
+}
+
+.eyebrow,
+.sectionEyebrow,
+.ctaEyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: #4f46e5;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.105em;
+}
+
+.eyebrow {
+  padding: 0.48rem 0.78rem;
+  border: 1px solid #e4e2ff;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.68);
+  letter-spacing: 0.06em;
+}
+
+.sparkle {
+  color: #f3a44d;
+  font-size: 0.9rem;
+}
+
+.heroCopy h1 {
+  max-width: 42rem;
+  margin: 1.25rem 0 1rem;
+  color: #11172a;
+  font-size: clamp(2.65rem, 5.6vw, 4.45rem);
+  font-weight: 800;
+  letter-spacing: -0.065em;
+  line-height: 1.04;
+}
+
+.heroCopy h1 span {
+  color: #4f46e5;
+}
+
+.heroSubtitle {
+  max-width: 39rem;
+  margin: 0;
+  color: #687087;
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: min(100%, 39rem);
+  min-height: 3.5rem;
+  margin-top: 1.75rem;
+  padding: 0.35rem 0.4rem 0.35rem 1rem;
+  border: 1px solid #e5e6f0;
+  border-radius: 0.9rem;
+  background: #fff;
+  box-shadow: 0 14px 36px rgba(42, 39, 91, 0.08);
+  color: #858ba0;
+}
+
+.searchBox:focus-within {
+  border-color: #a5a1ff;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.12), 0 14px 36px rgba(42, 39, 91, 0.08);
+}
+
+.searchBox input {
+  flex: 1;
+  width: 1rem;
+  padding: 0.55rem 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #11172a;
+  font: inherit;
+  font-size: 0.88rem;
+}
+
+.searchBox input::placeholder {
+  color: #9398a8;
+}
+
+.searchBox button,
+.emptyState button {
+  padding: 0.7rem 1rem;
+  border: 0;
+  border-radius: 0.65rem;
+  background: #4f46e5;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 700;
+  transition: background 150ms ease, transform 150ms ease;
+}
+
+.searchBox button:hover,
+.emptyState button:hover {
+  transform: translateY(-1px);
+  background: #4338ca;
+}
+
+.quickTopics {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.9rem;
+  color: #83899b;
+  font-size: 0.72rem;
+}
+
+.quickTopics button {
+  padding: 0.28rem 0.58rem;
+  border: 1px solid #e7e7f2;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  color: #596078;
+  cursor: pointer;
+  font: inherit;
+  transition: border-color 150ms ease, color 150ms ease, background 150ms ease;
+}
+
+.quickTopics button:hover {
+  border-color: #c7c4ff;
+  background: #f2f1ff;
+  color: #4338ca;
+}
+
+.heroAside {
+  position: relative;
+  display: grid;
+  min-height: 20rem;
+  place-items: center;
+}
+
+.orbit {
+  position: absolute;
+  border: 1px solid rgba(79, 70, 229, 0.11);
+  border-radius: 50%;
+  transform: rotate(-23deg);
+}
+
+.orbitOne {
+  width: 19rem;
+  height: 12rem;
+}
+
+.orbitTwo {
+  width: 23rem;
+  height: 15rem;
+  transform: rotate(36deg);
+}
+
+.heroBook {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 12rem;
+  height: 14.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 1.1rem 1.3rem 1.3rem 0.8rem;
+  background: linear-gradient(145deg, #675df0 0%, #4f46e5 52%, #3f37c8 100%);
+  box-shadow: 0 2rem 3.2rem rgba(79, 70, 229, 0.24), inset 0 1px 0 rgba(255, 255, 255, 0.28);
+  color: #fff;
+  transform: rotate(-7deg);
+}
+
+.bookSpine {
+  position: absolute;
+  top: 0.7rem;
+  bottom: 0.7rem;
+  left: 0.65rem;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.bookSymbol {
+  display: grid;
+  width: 5rem;
+  height: 5rem;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 1.2rem;
+  background: rgba(255, 255, 255, 0.14);
+  font-family: Georgia, serif;
+  font-size: 3.5rem;
+}
+
+.bookLines {
+  display: grid;
+  gap: 0.48rem;
+  width: 6rem;
+  margin-top: 1.3rem;
+}
+
+.bookLines i {
+  height: 0.28rem;
+  border-radius: 99px;
+  background: rgba(255, 255, 255, 0.36);
+}
+
+.bookLines i:nth-child(2) {
+  width: 78%;
+}
+
+.bookLines i:nth-child(3) {
+  width: 57%;
+}
+
+.floatChip {
+  position: absolute;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.72rem 0.9rem;
+  border: 1px solid rgba(231, 230, 248, 0.9);
+  border-radius: 0.9rem;
+  background: rgba(255, 255, 255, 0.91);
+  box-shadow: 0 12px 30px rgba(43, 39, 95, 0.1);
+  color: #292d43;
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.floatChipTop {
+  top: 2.2rem;
+  right: 0.5rem;
+  color: #4f46e5;
+  transform: rotate(4deg);
+}
+
+.floatChipBottom {
+  bottom: 2.25rem;
+  left: 0.5rem;
+  color: #2563eb;
+  transform: rotate(-4deg);
+}
+
+.floatDot {
+  position: absolute;
+  right: 2.2rem;
+  bottom: 3.2rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #f97316;
+  box-shadow: 0 0 0 5px rgba(249, 115, 22, 0.15);
+}
+
+.statsWrap {
+  position: relative;
+  max-width: 1200px;
+  padding-bottom: 2.4rem;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: min(100%, 47rem);
+  margin: 0 auto;
+  padding: 1.1rem 1rem;
+  border: 1px solid rgba(232, 232, 245, 0.9);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 8px 30px rgba(45, 42, 92, 0.045);
+  text-align: center;
+}
+
+.stats > div {
+  display: grid;
+  gap: 0.18rem;
+}
+
+.stats > div + div {
+  border-left: 1px solid #e7e8f0;
+}
+
+.stats strong {
+  color: #4f46e5;
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.stats span {
+  color: #777e91;
+  font-size: 0.7rem;
+}
+
+.courseSection {
+  padding: 4.8rem 0 5.3rem;
+  background: #fff;
+}
+
+.sectionHeading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 1.65rem;
+}
+
+.sectionHeading h2,
+.sectionHeadingCentered h2 {
+  margin: 0.55rem 0 0.5rem;
+  color: #151a2b;
+  font-size: clamp(1.65rem, 3vw, 2.15rem);
+  font-weight: 800;
+  letter-spacing: -0.05em;
+}
+
+.sectionHeading p,
+.sectionHeadingCentered p {
+  margin: 0;
+  color: #767d90;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.textLink,
+.courseLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #4f46e5;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.textLink:hover,
+.courseLink:hover {
+  color: #3730a3;
+  text-decoration: none;
+}
+
+.courseGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.15rem;
+}
+
+.courseCard {
+  display: flex;
+  min-height: 16.7rem;
+  flex-direction: column;
+  padding: 1.35rem;
+  border: 1px solid var(--home-line);
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(26, 31, 61, 0.035);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.courseCard:hover {
+  transform: translateY(-3px);
+  border-color: #d8d6ff;
+  box-shadow: 0 18px 38px rgba(38, 36, 87, 0.1);
+}
+
+.courseCardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.courseIcon {
+  display: grid;
+  width: 2.6rem;
+  height: 2.6rem;
+  place-items: center;
+  border-radius: 0.8rem;
+  background: #eeedff;
+  color: #4f46e5;
+}
+
+.courseCard.blue .courseIcon {
+  background: #e7efff;
+  color: #2563eb;
+}
+
+.courseLabel {
+  padding: 0.35rem 0.55rem;
+  border-radius: 999px;
+  background: #f3f2ff;
+  color: #6259c9;
+  font-size: 0.59rem;
+  font-weight: 800;
+  letter-spacing: 0.055em;
+}
+
+.courseCard.blue .courseLabel {
+  background: #edf4ff;
+  color: #3267bc;
+}
+
+.courseCard h3 {
+  margin: 0 0 0.55rem;
+  color: #151a2b;
+  font-size: 1.26rem;
+  font-weight: 750;
+  letter-spacing: -0.035em;
+}
+
+.courseDescription {
+  max-width: 33rem;
+  margin: 0;
+  color: #6c7387;
+  font-size: 0.86rem;
+  line-height: 1.7;
+}
+
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 1rem 0 1.1rem;
+}
+
+.tag {
+  padding: 0.29rem 0.52rem;
+  border: 1px solid #ebebf3;
+  border-radius: 0.4rem;
+  background: #fafaff;
+  color: #70768a;
+  font-size: 0.65rem;
+}
+
+.courseCardBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: auto;
+  padding-top: 0.9rem;
+  border-top: 1px solid #f0f0f5;
+  color: #848a9a;
+  font-size: 0.72rem;
+}
+
+.emptyState {
+  display: flex;
+  min-height: 12rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 2rem;
+  border: 1px dashed #d9d9e8;
+  border-radius: 1rem;
+  background: #fdfdff;
+  text-align: center;
+}
+
+.emptyState p {
+  max-width: 28rem;
+  margin: 0;
+  color: #687087;
+}
+
+.emptyState button {
+  padding: 0.55rem 0.8rem;
+}
+
+.learningSection {
+  padding: 4.8rem 0 5rem;
+  background: #f4f5ff;
+}
+
+.sectionHeadingCentered {
+  max-width: 43rem;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.benefitGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.benefitCard {
+  min-height: 13.2rem;
+  padding: 1.25rem;
+  border: 1px solid rgba(232, 233, 244, 0.9);
+  border-radius: 0.9rem;
+  background: #fff;
+  box-shadow: 0 7px 18px rgba(31, 35, 68, 0.035);
+}
+
+.benefitIcon {
+  display: grid;
+  width: 2.55rem;
+  height: 2.55rem;
+  place-items: center;
+  margin-bottom: 1rem;
+  border-radius: 0.75rem;
+}
+
+.benefitViolet {
+  background: #eeedff;
+  color: #4f46e5;
+}
+
+.benefitBlue {
+  background: #e8f0ff;
+  color: #2563eb;
+}
+
+.benefitOrange {
+  background: #fff0e8;
+  color: #a54100;
+}
+
+.benefitCard h3 {
+  margin: 0 0 0.55rem;
+  color: #171c2e;
+  font-size: 0.98rem;
+  font-weight: 750;
+}
+
+.benefitCard p {
+  margin: 0;
+  color: #737a8d;
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+
+.ctaSection {
+  padding: 3.5rem 0 4rem;
+  background: #fff;
+}
+
+.ctaCard {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  overflow: hidden;
+  min-height: 15rem;
+  padding: 2.4rem clamp(1.5rem, 5vw, 3.4rem);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 1.1rem;
+  background: linear-gradient(115deg, #4f46e5 0%, #5145e8 50%, #3e43c9 100%);
+  box-shadow: 0 22px 45px rgba(67, 56, 202, 0.2);
+  color: #fff;
+}
+
+.ctaPattern {
+  position: absolute;
+  z-index: -1;
+  top: -9rem;
+  right: 2rem;
+  width: 24rem;
+  height: 24rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 50%;
+  box-shadow: 0 0 0 2.5rem rgba(255, 255, 255, 0.035), 0 0 0 5rem rgba(255, 255, 255, 0.025);
+}
+
+.ctaCopy {
+  max-width: 39rem;
+}
+
+.ctaEyebrow {
+  color: #d4d2ff;
+}
+
+.ctaCopy h2 {
+  max-width: 36rem;
+  margin: 0.7rem 0 0.5rem;
+  color: #fff;
+  font-size: clamp(1.6rem, 3vw, 2.25rem);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+}
+
+.ctaCopy p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.77);
+  font-size: 0.9rem;
+}
+
+.ctaButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.35rem;
+}
+
+.ctaPrimary,
+.ctaSecondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 2.7rem;
+  padding: 0.65rem 0.9rem;
+  border: 1px solid transparent;
+  border-radius: 0.65rem;
+  font-size: 0.78rem;
+  font-weight: 750;
+  text-decoration: none;
+  transition: transform 150ms ease, background 150ms ease;
+}
+
+.ctaPrimary {
+  background: #fff;
+  color: #4338ca;
+}
+
+.ctaSecondary {
+  border-color: rgba(255, 255, 255, 0.19);
+  background: rgba(255, 255, 255, 0.11);
+  color: #fff;
+}
+
+.ctaPrimary:hover,
+.ctaSecondary:hover {
+  transform: translateY(-1px);
+  color: inherit;
+  text-decoration: none;
+}
+
+.ctaPrimary:hover {
+  background: #f0efff;
+  color: #3730a3;
+}
+
+.ctaSecondary:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.ctaBadge {
+  display: grid;
+  width: 8.5rem;
+  height: 8.5rem;
+  flex: 0 0 auto;
+  place-content: center;
+  justify-items: center;
+  gap: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.23);
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  text-align: center;
+  transform: rotate(5deg);
+}
+
+.ctaBadge span {
+  font-size: 0.76rem;
+  font-weight: 750;
+  line-height: 1.35;
+}
+
+[data-theme='dark'] .homepage {
+  --home-bg: #101421;
+  --home-panel: #171c2c;
+  --home-text: #f2f4fa;
+  --home-muted: #a0a7ba;
+  --home-line: #2b3246;
+}
+
+[data-theme='dark'] .hero {
+  background:
+    radial-gradient(ellipse at 76% 25%, rgba(79, 70, 229, 0.19), transparent 31rem),
+    radial-gradient(ellipse at 15% 65%, rgba(52, 60, 115, 0.27), transparent 32rem),
+    linear-gradient(180deg, #151a2a 0%, #111625 100%);
+}
+
+[data-theme='dark'] .heroCopy h1,
+[data-theme='dark'] .sectionHeading h2,
+[data-theme='dark'] .sectionHeadingCentered h2,
+[data-theme='dark'] .courseCard h3,
+[data-theme='dark'] .benefitCard h3 {
+  color: var(--home-text);
+}
+
+[data-theme='dark'] .heroSubtitle,
+[data-theme='dark'] .sectionHeading p,
+[data-theme='dark'] .sectionHeadingCentered p,
+[data-theme='dark'] .courseDescription,
+[data-theme='dark'] .benefitCard p,
+[data-theme='dark'] .emptyState p {
+  color: var(--home-muted);
+}
+
+[data-theme='dark'] .searchBox,
+[data-theme='dark'] .stats,
+[data-theme='dark'] .floatChip,
+[data-theme='dark'] .courseCard,
+[data-theme='dark'] .benefitCard {
+  border-color: var(--home-line);
+  background: var(--home-panel);
+}
+
+[data-theme='dark'] .searchBox input,
+[data-theme='dark'] .floatChip {
+  color: var(--home-text);
+}
+
+[data-theme='dark'] .searchBox input::placeholder,
+[data-theme='dark'] .stats span,
+[data-theme='dark'] .courseCardBottom {
+  color: var(--home-muted);
+}
+
+[data-theme='dark'] .quickTopics button,
+[data-theme='dark'] .tag,
+[data-theme='dark'] .emptyState {
+  border-color: var(--home-line);
+  background: #1c2234;
+  color: #c5cad8;
+}
+
+[data-theme='dark'] .courseSection,
+[data-theme='dark'] .ctaSection {
+  background: #101421;
+}
+
+[data-theme='dark'] .learningSection {
+  background: #151a2a;
+}
+
+[data-theme='dark'] .courseCardBottom {
+  border-color: var(--home-line);
+}
+
+[data-theme='dark'] .sectionHeading h2,
+[data-theme='dark'] .sectionHeadingCentered h2 {
+  color: var(--home-text);
+}
+
+@media (max-width: 996px) {
+  .hero {
+    padding-top: 3.5rem;
+  }
+
+  .heroInner {
+    grid-template-columns: minmax(0, 1.15fr) minmax(14rem, 0.85fr);
+    gap: 1rem;
+  }
+
+  .heroAside {
+    transform: scale(0.88);
+  }
+
+  .heroCopy h1 {
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
   }
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media (max-width: 720px) {
+  .hero {
+    padding-top: 2.7rem;
+  }
+
+  .heroInner {
+    grid-template-columns: 1fr;
+  }
+
+  .heroCopy {
+    padding-bottom: 0.5rem;
+  }
+
+  .heroAside {
+    display: none;
+  }
+
+  .statsWrap {
+    padding-top: 1.5rem;
+    padding-bottom: 1.6rem;
+  }
+
+  .stats {
+    padding: 0.95rem 0.45rem;
+  }
+
+  .stats strong {
+    font-size: 1rem;
+  }
+
+  .stats span {
+    font-size: 0.62rem;
+  }
+
+  .courseSection,
+  .learningSection {
+    padding: 3.5rem 0;
+  }
+
+  .sectionHeading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .courseGrid,
+  .benefitGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefitCard {
+    min-height: 0;
+  }
+
+  .ctaSection {
+    padding: 2.5rem 0 3rem;
+  }
+
+  .ctaCard {
+    min-height: auto;
+    padding: 1.75rem 1.35rem;
+  }
+
+  .ctaBadge {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroCopy h1 {
+    font-size: 2.65rem;
+  }
+
+  .eyebrow {
+    max-width: 100%;
+    font-size: 0.56rem;
+    letter-spacing: 0.035em;
+  }
+
+  .searchBox {
+    gap: 0.48rem;
+    padding-left: 0.75rem;
+  }
+
+  .searchBox input {
+    font-size: 0.76rem;
+  }
+
+  .searchBox button {
+    padding: 0.65rem 0.7rem;
+    font-size: 0.73rem;
+  }
+
+  .stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .courseCardBottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }

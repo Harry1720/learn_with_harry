@@ -8,9 +8,9 @@ import rehypeKatex from 'rehype-katex';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'DevLearn.vn',
+  tagline: 'Ghi chú học tập công nghệ bằng tiếng Việt',
+  favicon: 'img/devlearn-mark.svg',
 
   markdown: { format: 'detect' },
 
@@ -90,70 +90,53 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My Site',
+      title: 'DevLearn.vn',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'DevLearn',
+        src: 'img/devlearn-mark.svg',
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          to: '/docs/category/toan-roi-rac',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Toán rời rạc',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
+          to: '/docs/category/an-toan-thong-tin',
+          label: 'An toàn thông tin',
+          position: 'left',
         },
+        {to: '/blog', label: 'Bài viết', position: 'left'},
+        {to: '/docs/category/toan-roi-rac', label: 'Bắt đầu học', position: 'right'},
       ],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
       links: [
         {
-          title: 'Docs',
+          title: 'Môn học',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Toán rời rạc',
+              to: '/docs/category/toan-roi-rac',
+            },
+            {
+              label: 'An toàn thông tin',
+              to: '/docs/category/an-toan-thong-tin',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Khám phá',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
+              label: 'Bài viết',
               to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `© ${new Date().getFullYear()} DevLearn.vn · Ghi chú học tập công nghệ bằng tiếng Việt.`,
     },
     prism: {
       theme: prismThemes.github,
