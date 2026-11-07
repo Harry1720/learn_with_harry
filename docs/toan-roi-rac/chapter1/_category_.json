@@ -2,7 +2,8 @@
   "label": "Chương 1: CƠ SỞ LOGIC",
   "position": 1,
   "link": {
-    "type": "doc",
-    "id": "toan-roi-rac/chapter1/chap1"
+    "type": "generated-index",
+    "slug": "/category/toan-roi-rac/chapter1",
+    "description": "Nội dung chương 1."
   }
 }

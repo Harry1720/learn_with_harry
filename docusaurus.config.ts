@@ -8,8 +8,8 @@ import rehypeKatex from 'rehype-katex';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'DevLearn.vn',
-  tagline: 'Ghi chú học tập công nghệ bằng tiếng Việt',
+  title: 'HarryHub',
+  tagline: 'Học tập công nghệ với Harry',
   favicon: 'img/devlearn-mark.svg',
 
   markdown: { format: 'detect' },
@@ -54,12 +54,8 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-            remarkPlugins: [remarkMath],
-            rehypePlugins: [rehypeKatex],
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
         },
         blog: {
           showReadingTime: true,
@@ -67,10 +63,6 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -90,9 +82,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'DevLearn.vn',
+      title: 'HarryHub',
       logo: {
-        alt: 'DevLearn',
+        alt: 'HarryHub Logo',
         src: 'img/devlearn-mark.svg',
       },
       items: [
@@ -136,7 +128,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `© ${new Date().getFullYear()} DevLearn.vn · Ghi chú học tập công nghệ bằng tiếng Việt.`,
+      copyright: `© ${new Date().getFullYear()} HarryHub · Học tập công nghệ với Harry.`,
     },
     prism: {
       theme: prismThemes.github,

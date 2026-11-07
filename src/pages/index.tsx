@@ -152,21 +152,20 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title="Học IT theo cách của bạn"
-      description="Ghi chú học tập về Toán rời rạc và An toàn thông tin, trình bày theo chương bằng tiếng Việt.">
+      description="Ghi chú học tập trình bày theo chương bằng tiếng Việt.">
       <main className={styles.homepage}>
         <section className={styles.hero}>
           <div className={styles.heroGlow} />
           <div className={`container ${styles.heroInner}`}>
             <div className={styles.heroCopy}>
-              <span className={styles.eyebrow}>
+              {/* <span className={styles.eyebrow}>
                 <span className={styles.sparkle}>✦</span> GHI CHÚ HỌC TẬP CÔNG NGHỆ BẰNG TIẾNG VIỆT
-              </span>
+              </span> */}
               <Heading as="h1">
                 Học IT theo <span>cách của bạn.</span>
               </Heading>
               <p className={styles.heroSubtitle}>
-                Từng khái niệm được sắp xếp rõ ràng theo chương, giúp bạn ôn tập
-                dễ dàng và xây nền tảng vững chắc.
+                Từng khái niệm được sắp xếp rõ ràng theo chương, giúp bạn ôn tập dễ dàng và xây nền tảng vững chắc.
               </p>
 
               <form
@@ -186,7 +185,7 @@ export default function Home(): ReactNode {
                 <button type="submit">Tìm kiếm</button>
               </form>
 
-              <div className={styles.quickTopics}>
+              {/* <div className={styles.quickTopics}>
                 <span>Chủ đề:</span>
                 {['Logic', 'Mật mã', 'Mạng máy tính', 'SHA-256'].map((topic) => (
                   <button
@@ -199,13 +198,13 @@ export default function Home(): ReactNode {
                     {topic}
                   </button>
                 ))}
-              </div>
+              </div> */}
             </div>
 
             <div className={styles.heroAside} aria-hidden="true">
               <div className={`${styles.orbit} ${styles.orbitOne}`} />
               <div className={`${styles.orbit} ${styles.orbitTwo}`} />
-              <div className={styles.heroBook}>
+              {/* <div className={styles.heroBook}>
                 <div className={styles.bookSpine} />
                 <div className={styles.bookSymbol}>∑</div>
                 <div className={styles.bookLines}>
@@ -220,14 +219,14 @@ export default function Home(): ReactNode {
               <span className={`${styles.floatChip} ${styles.floatChipBottom}`}>
                 <Icon name="shield" size={18} /> Bảo mật
               </span>
-              <span className={styles.floatDot} />
+              <span className={styles.floatDot} /> */}
             </div>
           </div>
 
           <div className={`container ${styles.statsWrap}`}>
             <div className={styles.stats}>
               <div>
-                <strong>2</strong>
+                <strong>3</strong>
                 <span>Môn học</span>
               </div>
               <div>
@@ -333,15 +332,15 @@ export default function Home(): ReactNode {
                   <Link className={styles.ctaPrimary} to="/docs/category/toan-roi-rac">
                     <Icon name="book" size={17} /> Khám phá môn học
                   </Link>
-                  <Link className={styles.ctaSecondary} to="/docs/category/an-toan-thong-tin">
+                  {/* <Link className={styles.ctaSecondary} to="/docs/category/an-toan-thong-tin">
                     An toàn thông tin <Icon name="arrow" size={16} />
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
-              <div className={styles.ctaBadge} aria-hidden="true">
+              {/* <div className={styles.ctaBadge} aria-hidden="true">
                 <Icon name="book" size={34} />
                 <span>Học theo<br />từng bước</span>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
