@@ -8,7 +8,9 @@ sidebar_position: 2
     Tải file PDF
   </a>
 </div>
+
 ## 8.1. Phép toán trên tập hợp
+
 - **Hợp (union)** của $A$ và $B$ là tập hợp gồm tất cả các phần tử thuộc ít nhất một trong hai tập hợp $A$ và $B$, ký hiệu **$A \cup B$**, nghĩa là
 
   **$A \cup B = \{x \mid x \in A \lor x \in B\}$ (lấy hết)**
