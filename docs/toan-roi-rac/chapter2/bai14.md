@@ -9,7 +9,7 @@ sidebar_position: 8
   </a>
 </div>
 
-**Mở đầu:** *"Có **$k$ chiếc kẹo** giống nhau, cần chia chúng cho **$n$ em bé**. Hỏi có bao nhiêu cách chia kẹo như vậy?".*
+**Mở đầu:** Có $k$ chiếc kẹo giống nhau, cần chia chúng cho $n$ em bé. Hỏi có bao nhiêu cách chia kẹo như vậy?.
 
 *Bài toán có thể được đưa về theo 2 hướng chính như sau:*
 
