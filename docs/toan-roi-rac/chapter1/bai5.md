@@ -2,7 +2,13 @@
 title: "Bài 5: CÁC PHƯƠNG PHÁP SUY DIỄN"
 ---
 
-## 1. Các phương pháp suy diễn
+<div className="pdf-document-actions">
+  <a className="button button--primary" href="/pdfs/toan-roi-rac/chapter1/bai5.pdf" download="bai5-toan-roi-rac.pdf" target="_blank" rel="noreferrer">
+    Tải file PDF
+  </a>
+</div>
+
+## 5.1. Các phương pháp suy diễn
 
 - Trong các chứng minh toán học, xuất phát từ một số khẳng định đúng $p, q, r, \ldots$ (tiền đề), ta áp dụng các quy tắc suy luận để suy ra chân lí của một mệnh đề $h$ mà ta gọi là kết luận.
 
@@ -30,7 +36,7 @@ title: "Bài 5: CÁC PHƯƠNG PHÁP SUY DIỄN"
 
   - $h$: Kết luận
 
-### 1.1. Phương pháp khẳng định (Modus Ponens)
+### 5.1.1. Phương pháp khẳng định (Modus Ponens)
 
 | $p \rightarrow q$ | "Nếu An chăm học thì sẽ thi đậu Toán rời rạc" |
 | :--- | :--- |
@@ -39,7 +45,7 @@ title: "Bài 5: CÁC PHƯƠNG PHÁP SUY DIỄN"
 
  $\rightarrow$ Thể hiện bằng hằng đúng: **\[(*p* → *q*) ∧ *p*\] → *q***
 
-### 1.2. Phương pháp phủ định (Modus Tollens)
+### 5.1.2. Phương pháp phủ định (Modus Tollens)
 
 | $p \rightarrow q$ | "Nếu An chăm học thì sẽ thi đậu Toán rời rạc" |
 | :--- | :--- |
@@ -48,7 +54,7 @@ title: "Bài 5: CÁC PHƯƠNG PHÁP SUY DIỄN"
 
   $\rightarrow$ Thể hiện bằng hằng đúng: **\[(*p* → *q*) ∧ ¬*q*\] → ¬*p***
 
-### 1.3. Phương pháp tam đoạn luận (Syllogism) (Bắc cầu)
+### 5.1.3. Phương pháp tam đoạn luận (Syllogism) (Bắc cầu)
 
 | $p \rightarrow q$ | "Nếu áp dụng phần mềm thì hiệu quả công việc tăng" |
 | :--- | :--- |
@@ -61,17 +67,17 @@ title: "Bài 5: CÁC PHƯƠNG PHÁP SUY DIỄN"
 
   $\rightarrow$ *Tam đoạn luận trên hoàn toàn hợp logic. Tuy nhiên kết luận mâu thuẫn là do dựa trên một tiền đề sai.*
 
-### 1.4. Phương pháp tam đoạn luận rời
+### 5.1.4. Phương pháp tam đoạn luận rời
 
 * $[(p \vee q) \wedge \overline{p}] \rightarrow q \Leftrightarrow 1$
 
-* Giải thích: *chỉ có thể là p hoặc q mà không p nên q!*
+* Giải thích: *chỉ có thể là $p$ hoặc $q$ mà không $p$ nên $q$!*
 
 > *Khi chỉ có đúng 2 trường hợp có thể xảy ra, mà một trong hai trường hợp đã được khẳng định là SAI thì trường hợp còn lại mặc nhiên ĐÚNG.*
 
 - ***Ví dụ:*** An hoặc ở trong nhà hoặc ở ngoài sân. Mà An không ở trong nhà. Vậy An ở ngoài sân.
 
-### 1.5. Các phương pháp suy luận đơn giản
+### 5.1.5. Các phương pháp suy luận đơn giản
 
 | Quy tắc | Sơ đồ | Hằng đúng |
 | :---: | :---: | :--- |
@@ -125,7 +131,7 @@ Vậy ca sĩ Sơn Tùng có trình diễn.
     \therefore p & \text{(Phương pháp khẳng định)}
     \end{array}$
 
-### 1.6. Phương pháp mâu thuẫn
+### 5.1.6. Phương pháp mâu thuẫn
 
 **f. Quy tắc mâu thuẫn**
 
@@ -202,7 +208,7 @@ $$
 
 - Như vậy suy luận trên đã được chứng minh
 
-### 1.7. Phản ví dụ
+### 5.1.7. Phản ví dụ
 
 - Để chứng minh suy luận đúng, chúng ta sẽ sử dụng các luật logic và quy tắc suy luận.
 

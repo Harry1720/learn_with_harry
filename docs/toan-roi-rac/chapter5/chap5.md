@@ -1,4 +1,4 @@
-Chương V.\
+Chương $V$.\
 ĐẠI SỐ BOOL VÀ HÀM BOOL
 =======================
 
@@ -8,19 +8,19 @@ Chương V.\
 
 ![A white paper with numbers and letters Description automatically generated](./img/image1.png)
 
-Một đại số Bool còn **thỏa mãn các tính chất: kết hợp, giao hoán, phân bố, phần tử trung hòa, phần tử bù** (Đã đề cập ở chương I).
+Một đại số Bool còn **thỏa mãn các tính chất: kết hợp, giao hoán, phân bố, phần tử trung hòa, phần tử bù** (Đã đề cập ở chương $I$).
 
 > **Ví dụ:**
 >
-> **a/** Cho U là tập bất kỳ, trên A = P(U) (tập các tập con của U)
+> **$a$/** Cho $U$ là tập bất kỳ, trên $A$ = $P$($U$) (tập các tập con của $U$)
 >
-> Xét phép  ∧ là phép ∩, phép ∨ là phép ∪, phép là phép lấy phần bù, phần tử 0 là tập rỗng Ø, còn phần tử 1 là tập U.
+> Xét phép  $∧$ là phép $∩$, phép $∨$ là phép $∪$, phép là phép lấy phần bù, phần tử 0 là tập rỗng $Ø$, còn phần tử 1 là tập $U$.
 >
-> Khi đó (P(U), ∩, ∪, , ∅, U) là một đại số Bool.
+> Khi đó ($P$($U$), $∩$, $∪$, , $∅$, $U$) là một đại số Bool.
 >
-> **b/** Xét F là tập hợp tất cả các dạng mệnh đề theo n biến p<sub>1</sub>, p<sub>2</sub>,…, p<sub>n</sub> với phép toán hội ∧, phép toán tuyển ∨, phép , phần tử 1 là hằng đúng 1, phần tử 0 là hằng sai 0, phần tử bù của dạng mệnh đề E là dạng mệnh đề bù $`\overline{E}`$.
+> **$b$/** Xét $F$ là tập hợp tất cả các dạng mệnh đề theo $n$ biến $p$<sub>1</sub>, $p$<sub>2</sub>,…, $p$<sub>$n$</sub> với phép toán hội $∧$, phép toán tuyển $∨$, phép , phần tử 1 là hằng đúng 1, phần tử 0 là hằng sai 0, phần tử bù của dạng mệnh đề $E$ là dạng mệnh đề bù $`\overline{E}`$.
 >
-> Khi đó F là một đại số Bool.
+> Khi đó $F$ là một đại số Bool.
 
 ### 5.1.2. Hàm bool
 
@@ -28,38 +28,38 @@ Một đại số Bool còn **thỏa mãn các tính chất: kết hợp, giao h
 >
 > ![A screenshot of a math test Description automatically generated](./img/image3.png)
 >
-> Trong đó mỗi biến trong x<sub>1</sub>, x<sub>2</sub>, . . . , x<sub>n</sub> **chỉ nhận hai giá trị 0, 1** và f nhận giá trị trong\
-> **B = {0, 1}.**
+> Trong đó mỗi biến trong $x$<sub>1</sub>, $x$<sub>2</sub>, . . . , $x$<sub>$n$</sub> **chỉ nhận hai giá trị 0, 1** và $f$ nhận giá trị trong\
+> **$B$ = {0, 1}.**
 
-Ký hiệu **F<sub>n</sub>** để chỉ **tập các hàm Boole** n biến.
+Ký hiệu **$F$<sub>$n$</sub>** để chỉ **tập các hàm Boole** $n$ biến.
 
 > **Vi dụ:**
 >
 > ![A screenshot of a math test Description automatically generated](./img/image3.png)
 >
-> **e.** ![](./img/image4.png)là hàm Boole 4 biến.
+> **$e$.** ![](./img/image4.png)là hàm Boole 4 biến.
 >
-> ***\* Các phép toán trên F<sub>n</sub>:***
+> ***\* Các phép toán trên $F$<sub>$n$</sub>:***
 >
-> **- Phép cộng Bool ∨:**
+> **- Phép cộng Bool $∨$:**
 
-- Với f, g ∈ F<sub>n</sub> ta định nghĩa tổng Bool của f và g: **f ∨ g = f + g – fg**
+- Với $f$, $g$ $∈$ $F$<sub>$n$</sub> ta định nghĩa tổng Bool của $f$ và $g$: **$f$ $∨$ $g$ = $f$ + $g$ – fg**
 
-- ∀x = (x<sub>1</sub>, x<sub>2</sub>,…, x<sub>n</sub>) ∈ B<sub>n</sub> , (f ∨ g)(x) = f(x) + g(x) – f(x)g(x)
+- $∀$ $x$ = ($x$<sub>1</sub>, $x$<sub>2</sub>,…, $x$<sub>$n$</sub>) $∈$ $B$<sub>$n$</sub> , ($f$ $∨$ $g$)($x$) = $f$($x$) + $g$($x$) – $f$($x$)$g$($x$)
 
-- Dễ thấy f ∨ g ∈ F<sub>n</sub> và **(f** ∨ **g)(x) = max{f(x), g(x)}**
+- Dễ thấy $f$ $∨$ $g$ $∈$ $F$<sub>$n$</sub> và **($f$** $∨$ **$g$)($x$) = max{$f$($x$), $g$($x$)}**
 
-> **- Phép nhân Bool ∧:**
+> **- Phép nhân Bool $∧$:**
 
-- Với f, g ∈ F<sub>n</sub> ta định nghĩa tích Bool của f và g: **f ∧ g = fg**
+- Với $f$, $g$ $∈$ $F$<sub>$n$</sub> ta định nghĩa tích Bool của $f$ và $g$: **$f$ $∧$ $g$ = fg**
 
-- ∀x = (x<sub>1</sub>, x<sub>2</sub>,…,x<sub>n</sub>) ∈ B<sub>n</sub> , (f ∧ g)(x) = f(x)g(x)
+- $∀$ $x$ = ($x$<sub>1</sub>, $x$<sub>2</sub>,…,$x$<sub>$n$</sub>) $∈$ $B$<sub>$n$</sub> , ($f$ $∧$ $g$)($x$) = $f$($x$)$g$($x$)
 
-- Dễ thấy: f ∧ g ∈ F<sub>n</sub> và **(f ∧ g)(x) = min{f(x), g(x)}**
+- Dễ thấy: $f$ $∧$ $g$ $∈$ $F$<sub>$n$</sub> và **($f$ $∧$ $g$)($x$) = min{$f$($x$), $g$($x$)}**
 
-- Ta thường viết **fg** thay cho **f ∧ g.**
+- Ta thường viết **fg** thay cho **$f$ $∧$ $g$.**
 
-> **- Phép lấy hàm bù:** Với f ∈ F<sub>n</sub> ta định nghĩa hàm bù của f như sau: $`\boxed{\overline{f} = 1 - f}`$
+> **- Phép lấy hàm bù:** Với $f$ $∈$ $F$<sub>$n$</sub> ta định nghĩa hàm bù của $f$ như sau: $`\boxed{\overline{f} = 1 - f}`$
 
 ## 5.2. Dạng tuyển chuẩn tắc
 
@@ -67,15 +67,15 @@ Ký hiệu **F<sub>n</sub>** để chỉ **tập các hàm Boole** n biến.
 
 ### 5.2.1. Từ đơn, từ tối tiểu
 
-Xét tập hợp các hàm Boole F<sub>n</sub> theo **n biến** boolean x<sub>1</sub>, x<sub>2</sub>,..., x<sub>n</sub>. Khi đó:
+Xét tập hợp các hàm Boole $F$<sub>$n$</sub> theo **$n$ biến** boolean $x$<sub>1</sub>, $x$<sub>2</sub>,..., $x$<sub>$n$</sub>. Khi đó:
 
-> i\) Mỗi biến Boole x<sub>i</sub> hay $`{\overline{x}}_{i}`$ được gọi là **<u>từ đơn.</u>**
+> $i$\) Mỗi biến Boole $x$<sub>$i$</sub> hay $`{\overline{x}}_{i}`$ được gọi là **<u>từ đơn.</u>**
 >
-> ii\) **<u>Từ tối tiểu</u>** *(Hội sơ cấp/ Đơn thức tối tiểu)* là **tích** **khác 0** của <span class="mark">đúng **n từ đơn.**</span>
+> ii\) **<u>Từ tối tiểu</u>** *(Hội sơ cấp/ Đơn thức tối tiểu)* là **tích** **khác 0** của <span class="mark">đúng **$n$ từ đơn.**</span>
 
 ![](./img/image5.png)
 
-**Nhận xét.** Tập hợp các hàm Boole **n biến** chứa đúng **2n từ đơn và 2<sup>n</sup> từ tối tiểu.**
+**Nhận xét.** Tập hợp các hàm Boole **$n$ biến** chứa đúng **2n từ đơn và 2<sup>$n$</sup> từ tối tiểu.**
 
 ![A screenshot of a white paper with black text Description automatically generated](./img/image6.png)
 
@@ -95,7 +95,7 @@ Xét tập hợp các hàm Boole F<sub>n</sub> theo **n biến** boolean x<sub>1
 >
 > ![](./img/image9.png)
 >
-> Và hàm bool **chỉ nhận** các từ tối tiểu (**các dòng**) có giá trị **f** **bằng 1** trong bảng chân trị.
+> Và hàm bool **chỉ nhận** các từ tối tiểu (**các dòng**) có giá trị **$f$** **bằng 1** trong bảng chân trị.
 
 ![](./img/image10.png)
 
@@ -117,7 +117,7 @@ Xét tập hợp các hàm Boole F<sub>n</sub> theo **n biến** boolean x<sub>1
 
 ***So sánh với Bảng chân trị của hàm (2):***
 
-| **x** | **y** | **z** | **xy** | $x\overline{z}$ | $\overline{x}z$ | **f(x, y, z)** |
+| **$x$** | **$y$** | **$z$** | **xy** | $x\overline{z}$ | $\overline{x}z$ | **$f$($x$, $y$, $z$)** |
 |:-----:|:-----:|:-----:|:------:|:-------------:|:-------------:|:--------------:|
 |   0   |   0   |   0   |   0    |       0       |       0       |       0        |
 |   0   |   0   |   1   |   0    |       0       |       1       |     **1**      |
@@ -140,35 +140,35 @@ Xét tập hợp các hàm Boole F<sub>n</sub> theo **n biến** boolean x<sub>1
 
 > ***Bài toán:***
 >
-> \- Cho hàm boolean f bất kỳ, yêu cầu tìm dạng **tuyển chuẩn tắc tối thiểu** *(công thức đa thức tối tiểu)* của nó.
+> \- Cho hàm boolean $f$ bất kỳ, yêu cầu tìm dạng **tuyển chuẩn tắc tối thiểu** *(công thức đa thức tối tiểu)* của nó.
 >
-> \- Ý nghĩa của bài toán: **f tối thiểu ⇒ <u>Mạch logic tối thiểu</u>**
+> \- Ý nghĩa của bài toán: **$f$ tối thiểu $⇒$ <u>Mạch logic tối thiểu</u>**
 >
 > 🡪 Để tìm, ta sử dụng ***phương pháp Karnaugh*** sau đây.
 
 ## 5.3. Phương pháp Karnaugh
 
-> \* Biểu đồ K là một hình chữ nhật, gồm tập hợp các ô, **mỗi ô biểu diễn một hội sơ cấp** của **<u>tất cả</u> các biến**.
+> \* Biểu đồ $K$ là một hình chữ nhật, gồm tập hợp các ô, **mỗi ô biểu diễn một hội sơ cấp** của **<u>tất cả</u> các biến**.
 >
-> \* Nếu hàm boolean có **n biến** thì biểu đồ K có **2<sup>n</sup> ô.**
+> \* Nếu hàm boolean có **$n$ biến** thì biểu đồ $K$ có **2<sup>$n$</sup> ô.**
 >
-> \* Khi **một ô nằm trong dãy được đánh dấu bởi x thì tại đó x = 1**, bởi $`\overline{x}`$ thì tại đó x = 0, tương tự cho y, z, t…
+> \* Khi **một ô nằm trong dãy được đánh dấu bởi $x$ thì tại đó $x$ = 1**, bởi $`\overline{x}`$ thì tại đó $x$ = 0, tương tự cho $y$, $z$, $t$…
 >
 > **Ví dụ:**
 >
-> ***Biểu đồ K trường hợp 3 biến.***
+> ***Biểu đồ $K$ trường hợp 3 biến.***
 
 ![A white rectangular object with black text Description automatically generated](./img/image21.png)
 
-***Biểu đồ K trường hợp 4 biến.***
+***Biểu đồ $K$ trường hợp 4 biến.***
 
 ![A white rectangular grid with black numbers and symbols Description automatically generated](./img/image22.png)
 
-> **\* Gạch chéo (hoặc tô đen)** những ô mà **f nhận giá trị 1.** Khi đó ta được một biểu đồ, gọi là biểu đồ Karnaugh của f, ký hiệu bởi **kar(f)**, hoặc đơn giản ký hiệu là **K**.
+> **\* Gạch chéo (hoặc tô đen)** những ô mà **$f$ nhận giá trị 1.** Khi đó ta được một biểu đồ, gọi là biểu đồ Karnaugh của $f$, ký hiệu bởi **kar($f$)**, hoặc đơn giản ký hiệu là **$K$**.
 
 Hai ô được gọi là **kề nhau** (theo nghĩa rộng), nếu chúng là **hai ô liền nhau** <span class="mark">hoặc **chúng là ô đầu, ô cuối** của ***cùng một hàng (cột)***</span> nào đó. Nhận xét rằng, do cách đánh dấu như trên, **hai ô kề nhau chỉ lệch nhau ở một <u>bit</u> duy nhất.**
 
-<span class="mark">Các biến bool x, y, (z, t…) được sắp xếp tại các cạnh theo thứ tự *Trên, Dưới, Trái, Phải và đặt xen kẽ biến và bù của biến như các hình ví dụ.*</span>
+<span class="mark">Các biến bool $x$, $y$, ($z$, $t$…) được sắp xếp tại các cạnh theo thứ tự *Trên, Dưới, Trái, Phải và đặt xen kẽ biến và bù của biến như các hình ví dụ.*</span>
 
 *<span class="mark">Thứ tự đọc của một hội sơ cấp thuộc một ô cũng theo thứ tự Trên, Dưới, Trái, Phải.</span>*
 
@@ -178,10 +178,10 @@ Hai ô được gọi là **kề nhau** (theo nghĩa rộng), nếu chúng là *
 
 $`\underbrace{\overline{x} \land \overline{x}}_{\overline{x}} \land \underbrace{y \land \overline{y}}_{1} \land \underbrace{z \land \overline{z}}_{1} \land \underbrace{\overline{t} \land \overline{t}}_{\overline{t}}`$
 ``` math
-= \overline{x} \land \overline{t} = \overline{x}\overline{t}
+= \overline{$x$} \land \overline{$t$} = \overline{$x$}\overline{$t$}
 ```
 
-Trong đại số Boolean, nếu **một biến được nhân (hội) với chính nó** (bao gồm cả bù của nó), kết quả sẽ luôn **<u>bằng chính biến đó:</u> *x ⋅ x = x;*** $`\overline{x} \cdot \overline{x} = \overline{x}`$
+Trong đại số Boolean, nếu **một biến được nhân (hội) với chính nó** (bao gồm cả bù của nó), kết quả sẽ luôn **<u>bằng chính biến đó:</u> *$x$ ⋅ $x$ = $x$;*** $`\overline{x} \cdot \overline{x} = \overline{x}`$
 
 | ![](./img/image25.png) | ![](./img/image26.png) |
 |:--:|:--:|

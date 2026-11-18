@@ -2,6 +2,12 @@
 title: "Bài 6: CÁC PHƯƠNG PHÁP CHỨNG MINH"
 ---
 
+<div className="pdf-document-actions">
+  <a className="button button--primary" href="/pdfs/toan-roi-rac/chapter1/bai6.pdf" download="bai6-toan-roi-rac.pdf" target="_blank" rel="noreferrer">
+    Tải file PDF
+  </a>
+</div>
+
 - Mỗi bài toán chứng minh gồm 2 phần chính: **giả thiết và kết luận.** 
 
 - Quá trình chứng minh bài toán là quá trình sử dụng các tiên đề, luật logic, các quy tắc suy luận, ... và áp dụng các phương pháp chứng minh để **từ giả thiết đã cho ta có được kết luận.**
@@ -20,9 +26,9 @@ title: "Bài 6: CÁC PHƯƠNG PHÁP CHỨNG MINH"
 
   - ***Phỏng đoán*** là một phát biểu nó đang được giả định là một phát biểu đúng.
 
-## 1. Phương pháp chứng minh trực tiếp
+## 6.1. Phương pháp chứng minh trực tiếp
 
-- Để chứng minh A suy ra B, chúng ta **giả sử A đúng**, sau đó áp dụng các quy tắc suy luận, các luật logic, các tiên đề, ... để chỉ ra B đúng.
+- Để chứng minh $A$ suy ra $B$, chúng ta **giả sử $A$ đúng**, sau đó áp dụng các quy tắc suy luận, các luật logic, các tiên đề, ... để chỉ ra $B$ đúng.
 
 ***Ví dụ 1:*** CMR nếu $n$ chia hết cho 3 thì $n$<sup>$2$</sup> chia hết cho 9.
 
@@ -52,7 +58,7 @@ title: "Bài 6: CÁC PHƯƠNG PHÁP CHỨNG MINH"
 
     ⇒ $\left( n^{2} - 1 \right) \vdots 24$ (đpcm).
 
-## 2. Phương pháp chứng minh phản chứng thứ nhất (chứng minh gián tiếp)
+## 6.2. Phương pháp chứng minh phản chứng thứ nhất (chứng minh gián tiếp)
 
 - Để chứng minh P → Q đúng, ta chứng minh ¬Q → ¬P đúng, vì $P \rightarrow Q \Leftrightarrow \overline{Q} \rightarrow \overline{P}$.
 
@@ -72,7 +78,7 @@ title: "Bài 6: CÁC PHƯƠNG PHÁP CHỨNG MINH"
 
 - Vì $n$ là số chẵn nên $n = 2k$ (với $k \in \mathbb{Z}$). Do đó $5n = 5.2k = 10k$ là một số chẵn.
 
-## 3. Phương pháp chứng minh phản chứng thứ hai
+## 6.3. Phương pháp chứng minh phản chứng thứ hai
 
 - ***Bước 1 (phủ định kết luận):*** Giả sử có điều trái với kết luận của bài toán.
 
@@ -159,7 +165,7 @@ title: "Bài 6: CÁC PHƯƠNG PHÁP CHỨNG MINH"
 
 - Vậy từ mâu thuẫn, ta có **đpcm.**
 
-## 4. Phương pháp chứng minh theo trường hợp
+## 6.4. Phương pháp chứng minh theo trường hợp
 
 - Được thể hiện bởi hằng đúng: 
 
@@ -188,7 +194,7 @@ $\quad\Rightarrow n^2 \ge n$. Vậy $n^2 \ge n$ đúng trong trường hợp nà
 $\quad$ta có $n^2 \ge 0$. Vậy $n^2 \ge n$ đúng trong trường hợp này.
 - Bởi bất đẳng thức $n^2 \ge n$ đúng cho tất cả ba trường hợp, chúng ta có thể kết luận rằng: Nếu $n$ là một số nguyên thì $n^2 \ge n$.
 
-## 5. Phương pháp chứng minh quy nạp (yếu)
+## 6.5. Phương pháp chứng minh quy nạp (yếu)
 
 - Với những bài toán chứng minh tính đúng đắn của một biểu thức mệnh đề có chứa tham số $n \in \mathbb{Z}$, như $P(n)$. Quy nạp toán học là một kỹ thuật chứng minh $P(n)$ đúng với mọi số $n \ge N_0$.
 

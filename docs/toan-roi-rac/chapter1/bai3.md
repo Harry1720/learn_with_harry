@@ -2,9 +2,15 @@
 title: "Bài 3: QUY TẮC THAY THẾ VÀ BÀI TOÁN BIỂU THỨC MỆNH ĐỀ"
 ---
 
-## 1. Các quy tắc thay thế
+<div className="pdf-document-actions">
+  <a className="button button--primary" href="/pdfs/toan-roi-rac/chapter1/bai3.pdf" download="bai3-toan-roi-rac.pdf" target="_blank" rel="noreferrer">
+    Tải file PDF
+  </a>
+</div>
 
-### 1.1. Các luật logic
+## 3.1. Các quy tắc thay thế
+
+### 3.1.1. Các luật logic
 
 | STT | Biểu thức | Tên luật |
 | :---: | :--- | :--- |
@@ -50,9 +56,9 @@ $$(\neg p \rightarrow r) \wedge (q \rightarrow r) \Leftrightarrow (p \rightarrow
   \end{align*}
   $$
 
-### 1.2. Các quy tắc khác
+### 3.1.2. Các quy tắc khác
 
-- ***Quy tắc thay thế tương đương:*** Trong dạng mệnh đề *E*, nếu ta **thay thế biểu thức con *F* bởi một dạng mệnh đề tương đương logic (*F’*)** thì dạng mệnh đề thu được vẫn còn tương đương logic với *E.*
+- ***Quy tắc thay thế tương đương:*** Trong dạng mệnh đề $E$, nếu ta **thay thế biểu thức con $F$ bởi một dạng mệnh đề tương đương logic ($F’$)** thì dạng mệnh đề thu được vẫn còn tương đương logic với $E$.
 
 ![A screenshot of a math test Description automatically generated](./img/image19.png)
 
@@ -62,13 +68,13 @@ $$(\neg p \rightarrow r) \wedge (q \rightarrow r) \Leftrightarrow (p \rightarrow
 
 ![](./img/image20.png)
 
-## 2. Bài toán liên quan đến biểu thức mệnh đề
+## 3.2. Bài toán liên quan đến biểu thức mệnh đề
 
-### 2.1. Bài toán rút gọn biểu thức
+### 3.2.1. Bài toán rút gọn biểu thức
 
-- Sử dụng các luật & quy tắc trên để rút gọn biểu thức *E*, và biểu thức rút gọn *F* phải **tương đương & gọn hơn** so với biểu thức ban đầu (*E*).
+- Sử dụng các luật & quy tắc trên để rút gọn biểu thức $E$, và biểu thức rút gọn $F$ phải **tương đương & gọn hơn** so với biểu thức ban đầu ($E$).
 
-- Nếu *E* là hằng đúng hoặc hằng sai thì ta không cần làm gì cả (vì nó đã gọn).
+- Nếu $E$ là hằng đúng hoặc hằng sai thì ta không cần làm gì cả (vì nó đã gọn).
 
 - ***Ví dụ:*** Rút gọn biểu thức $[p \wedge (p \rightarrow q)] \rightarrow q$
 
@@ -86,15 +92,15 @@ $$(\neg p \rightarrow r) \wedge (q \rightarrow r) \Leftrightarrow (p \rightarrow
     | $\Leftrightarrow \overline{p} \vee 1$ | luật thống trị |
     | $\Leftrightarrow 1$ | |
 
-### 2.2. Bài toán xác định chân trị của biểu thức E cho trước
+### 3.2.2. Bài toán xác định chân trị của biểu thức E cho trước
 
 **\* <u>Cách giải:</u>**
 
-- ***Bước 1:*** **Rút gọn *E*.** Nếu *E* là hằng đúng hoặc hằng sai ⇒ kết thúc.
+- ***Bước 1:*** **Rút gọn $E$.** Nếu $E$ là hằng đúng hoặc hằng sai ⇒ kết thúc.
 
-- ***Bước 2:*** Lập bảng chân trị của *E* (đã rút gọn).
+- ***Bước 2:*** Lập bảng chân trị của $E$ (đã rút gọn).
 
-> Chú ý: Nếu *E* gồm **n biến** thì bảng chân trị sẽ có **2<sup>n</sup>** dòng thế hiện những giá tri khác nhau của n biến đó.
+> Chú ý: Nếu $E$ gồm **$n$ biến** thì bảng chân trị sẽ có **$2$<sup>$n$</sup>** dòng thế hiện những giá tri khác nhau của $n$ biến đó.
 
 ***Ví dụ:*** xác định chân trị của biểu thức $E = ((p \rightarrow q) \rightarrow p) \wedge p$
 

@@ -4,7 +4,7 @@
 
 <!-- -->
 
-1.  ThS. Vũ Đình Long. *Slide Bài giảng Toán Rời Rạc,* Khoa CNTT – Trường ĐH GTVT TP.HCM*,* 2023.
+1.  ThS. Vũ Đình Long. *Slide Bài giảng Toán Rời Rạc,* Khoa CNTT – Trường ĐH GTVT TP.HCM, 2023.
 
 2.  GS. Nguyễn Hữu Anh. *Toán rời rạc*, NXB ĐH KHTN TP.HCM
 

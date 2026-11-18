@@ -2,9 +2,15 @@
 title: "Bài 4: VỊ TỪ VÀ LƯỢNG TỪ"
 ---
 
-## 1. Vị từ & Lượng từ
+<div className="pdf-document-actions">
+  <a className="button button--primary" href="/pdfs/toan-roi-rac/chapter1/bai4.pdf" download="bai4-toan-roi-rac.pdf" target="_blank" rel="noreferrer">
+    Tải file PDF
+  </a>
+</div>
 
-### 1.1. Vị từ (predicate)
+## 4.1. Vị từ & Lượng từ
+
+### 4.1.1. Vị từ (predicate)
 
 - Là một phát biểu mà:
 
@@ -34,7 +40,7 @@ title: "Bài 4: VỊ TỪ VÀ LƯỢNG TỪ"
 
   - Nếu $x > 1$ thì $x > 5$
 
-- **Các trường hợp của vị từ:** Với A là một tập hợp. Khi xét một vị từ $p(x)$ với $x \in A$. Ta có các trường hợp sau:
+- **Các trường hợp của vị từ:** Với $A$ là một tập hợp. Khi xét một vị từ $p(x)$ với $x \in A$. Ta có các trường hợp sau:
 
   - **TH 1.** Khi thay $x$ bởi một phần tử $a$ tùy ý thuộc $A$, ta có $p(a)$ đúng.
 
@@ -42,7 +48,7 @@ title: "Bài 4: VỊ TỪ VÀ LƯỢNG TỪ"
 
   - **TH 3.** Khi thay $x$ bởi một phần tử $a$ tùy ý thuộc $A$, ta có $p(a)$ sai.
 
-### 1.2. Lượng từ hóa vị từ
+### 4.1.2. Lượng từ hóa vị từ
 
 > **Định nghĩa 1.** Cho $p(x)$ là một vị từ theo một biến xác định trên $A$. Ta định nghĩa các mệnh đề lượng từ hóa của $p(x)$ như sau:
 > - Mệnh đề "**Với mọi $x$ thuộc $A$ sao cho $p(x)$**", kí hiệu bởi
@@ -61,15 +67,15 @@ title: "Bài 4: VỊ TỪ VÀ LƯỢNG TỪ"
 
     - Là 1 vị từ.
 
-    - Khi gán giá trị *x = 3*, ta có *P(3): 3<sup>2</sup> \> 4*, là mệnh đề đúng.
+    - Khi gán giá trị $x = 3$, ta có $P(3): 3$<sup>$2$</sup> \> $4$*, là mệnh đề đúng.
 
-    - Khi áp dụng lượng từ, $\exists x\mathbb{\in R},x^{2} > 4$, ta có một mệnh đề đúng vì tồn tại *x = 3*.
+    - Khi áp dụng lượng từ, $\exists x\mathbb{\in R},x^{2} > 4$, ta có một mệnh đề đúng vì tồn tại $x = 3$.
 
-  - ***P(x): x \> 0***
+  - ***$P(x): x$ \> $0$***
 
     - Là 1 vị từ.
 
-    - Khi gán giá trị *x = -1*, ta có *P(-1): -1 \> 0,* là mệnh đề sai.
+    - Khi gán giá trị $x = -1$, ta có $$P(-1): -1 > 0$, là mệnh đề sai.
 
     - Khi áp dụng lượng từ, $\forall x\mathbb{\in N}*,x > 0$, ta có một mệnh đề đúng vì mọi số tự nhiên khác 0 đều lớn hơn 0.
 
@@ -99,36 +105,34 @@ title: "Bài 4: VỊ TỪ VÀ LƯỢNG TỪ"
 
   - ***Chứng minh chiều đảo không đúng trong trường hợp tổng quát.*** Lấy ví dụ sau:
 
-    - Gọi p(x, y) là vị từ theo 2 biến thực: **"x + y = 1"**
+    - Gọi p(x, y) là vị từ theo 2 biến thực: "$x + y = 1$"
 
-    - Ta nhận xét rằng nếu thay **y = b** là một số thực tùy ý thì ta có thể chọn **x = 1 - b** để cho **x + b = 1**, nên mệnh đề "$\exists x\mathbb{\in R},x + b = 1$" là đúng.
+    - Ta nhận xét rằng nếu thay $y = b$ là một số thực tùy ý thì ta có thể chọn $x = 1 - b$ để cho $x + b = 1$, nên mệnh đề "$\exists x\mathbb{\in R},x + b = 1$" là đúng.
 
       Điều này chứng tỏ mệnh đề "$\forall y\mathbb{\in R},\exists x\mathbb{\in R},x + y = 1$" đúng.
 
-    - Ngược lại nếu thay **z = a** tùy ý, ta có thể chọn **<span class="mark">y = -a</span>** để cho **a + y = 0 ≠ 1** nên mệnh đề "$\forall y\mathbb{\in R},a + y = 1$" là sai.
+    - Ngược lại nếu thay **z = a** tùy ý, ta có thể chọn **<span class="mark">$y = -a$</span>** để cho **$a + y = 0 ≠ 1$** nên mệnh đề "$\forall y\mathbb{\in R},a + y = 1$" là sai.
 
       Điều này chứng tỏ mệnh đề "$\exists x\mathbb{\in R},\forall y\mathbb{\in R},x + y = 1$" là sai.
 
     - **Do đó ta được đpcm.**
 
 
-### 1.3. Quy tắc biến đổi lượng từ
+### 4.1.3. Quy tắc biến đổi lượng từ
 
-- ** Phủ định của mệnh đề lượng từ hóa vị từ *p(x, y,…)* có được bằng các thay ∀ thành ∃, thay ∃ thành ∀ và vị từ p(x, y, .. ) thành ¬p(x, y, .. ).
+- ** Phủ định của mệnh đề lượng từ hóa vị từ $p(x, y,…)$ có được bằng các thay $∀$ thành $∃$, thay $∃$ thành $∀$ và vị từ $p(x, y, .. )$ thành $¬p(x, y, .. )$.
 
   * $\overline{\forall x, p(x)} \Leftrightarrow \exists x, \overline{p(x)}$
 
   * $\overline{\exists x, p(x)} \Leftrightarrow \forall x, \overline{p(x)}$
 
-- Không phải tất cả x đều thỏa p(x), nghĩa là tồn tại ít nhất một x không thỏa p(x).
+- Không phải tất cả $x$ đều thỏa $p(x)$, nghĩa là tồn tại ít nhất một $x$ không thỏa $p(x)$.
 
-- Không có x nào thỏa p(x), nghĩa là tất cả x đều không thỏa p(x).
+- Không có $x$ nào thỏa $p(x)$, nghĩa là tất cả $x$ đều không thỏa $p(x)$.
 
   ***Ví dụ:*** $\overline{\forall x, x^2 - 3x + 2 = 0} \Leftrightarrow \exists x, x^2 - 3x + 2 \neq 0$
 
-### 1.4. Các quy tắc phổ dụng:
-
-**1.3.5. Các quy tắc phổ dụng**
+### 4.1.4. Các quy tắc phổ dụng:
 
 - **Đặc biệt hóa phổ dụng**
   $$

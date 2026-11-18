@@ -1,8 +1,9 @@
 {
-  "label": "Chương 2: PHƯƠNG PHÁP ĐẾM",
+  "label": "Chương 2: PHƯƠNG PHÁP ĐẾM (COUNTING)",
   "position": 2,
   "link": {
-    "type": "doc",
-    "id": "toan-roi-rac/chapter2/chap2"
+    "type": "generated-index",
+    "slug": "/category/toan-roi-rac/chapter2",
+    "description": "Nội dung chương 2."
   }
 }

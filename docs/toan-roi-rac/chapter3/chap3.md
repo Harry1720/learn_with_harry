@@ -30,7 +30,7 @@ SỐ NGUYÊN
 
   - Thuật toán tự nhiên để tìm UCLN đó là duyệt từ số nhỏ hơn trong 2 số về tới 1, số nào mà **cả a và b chia hết <u>đầu tiên</u>** sẽ là UCLN
 
-  - Chú ý rằng **UCLN(a, 0) = UCLN(0, a) = a**
+  - Chú ý rằng **$\operatorname{UCLN}(a, 0) = \operatorname{UCLN}(0, a) = a$**
 
 - **Bội Chung Nhỏ Nhất (BCNN)** của 2 số a, b là số nhỏ nhất mà chia hết đồng thời cho cả a và b
 
@@ -44,17 +44,17 @@ SỐ NGUYÊN
 
 - **Ví dụ:**
 
-  - UCLN(20, 15) = UCLN (5, 15) = UCLN(10, 5) = UCLN(5, 5) =\> UCLN(20, 15) = 5
+  - $\operatorname{UCLN}(20, 15) = \operatorname{UCLN}(5, 15) = \operatorname{UCLN}(10, 5) = \operatorname{UCLN}(5, 5) = 5$
 
-  - UCLN(16, 10) = UCLN(6, 10) = UCLN(6, 4) = UCLN(4, 2) = UCLN(2, 2) =\> UCLN(16, 10) = 2
+  - $\operatorname{UCLN}(16, 10) = \operatorname{UCLN}(6, 10) = \operatorname{UCLN}(6, 4) = \operatorname{UCLN}(4, 2) = \operatorname{UCLN}(2, 2) = 2$
 
-- Để tìm BCNN: **BCNN(a, b) = a \* b / UCLN(a, b). **
+- Để tìm BCNN: **$\operatorname{BCNN}(a, b) = \frac{ab}{\operatorname{UCLN}(a, b)}$.**
 
 ***\* Cải tiến thuật toán Euclid***
 
 - Trong mục 2 khi a và b cách xa nhau thì thuật toán Euclid hoạt động không hiệu quả, ví dụ, tìm ULCN(1000000000, 1) thì thuật toán cần lặp 999999999 lần. 
 
-- Ta cải tiến thuật toán Euclid: UCLN của hai số nguyên không thay đổi khi **thay 1 trong 2 số thành <u>số dư của nó với số còn lại.</u>** Có nghĩa là *UCLN(a, b) = UCLN(b, a % b)*
+- Ta cải tiến thuật toán Euclid: UCLN của hai số nguyên không thay đổi khi **thay 1 trong 2 số thành <u>số dư của nó với số còn lại.</u>** Có nghĩa là *$\operatorname{UCLN}(a, b) = \operatorname{UCLN}(b, a \bmod b)$*
 
 - Quá trình thay thế này được lặp đi lặp lại cho tới khi 1 trong 2 số bằng 0, khi đó UCLN chính là số còn lại.
 

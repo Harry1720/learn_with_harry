@@ -1,17 +1,17 @@
 :root {
-  --ifm-color-primary: #4f46e5;
-  --ifm-color-primary-dark: #4338ca;
-  --ifm-color-primary-darker: #3730a3;
-  --ifm-color-primary-darkest: #312e81;
-  --ifm-color-primary-light: #6366f1;
-  --ifm-color-primary-lighter: #818cf8;
-  --ifm-color-primary-lightest: #a5b4fc;
-  --ifm-color-secondary: #3b82f6;
+  --ifm-color-primary: #2f827b;
+  --ifm-color-primary-dark: #286f69;
+  --ifm-color-primary-darker: #225e59;
+  --ifm-color-primary-darkest: #1b4b47;
+  --ifm-color-primary-light: #40948d;
+  --ifm-color-primary-lighter: #6aada7;
+  --ifm-color-primary-lightest: #a7cfcb;
+  --ifm-color-secondary: #2f827b;
   --ifm-color-tertiary: #a54100;
   --ifm-color-content: #263044;
   --ifm-color-content-secondary: #667085;
   --ifm-background-color: #fff;
-  --ifm-background-surface-color: #f8f8ff;
+  --ifm-background-surface-color: #f4f9f8;
   --ifm-font-family-base: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --ifm-font-family-monospace: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
   --ifm-heading-font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -19,52 +19,52 @@
   --ifm-line-height-base: 1.72;
   --ifm-heading-color: #11172a;
   --ifm-heading-font-weight: 750;
-  --ifm-link-color: #4f46e5;
-  --ifm-link-hover-color: #3730a3;
+  --ifm-link-color: #2f827b;
+  --ifm-link-hover-color: #225e59;
   --ifm-navbar-background-color: rgba(255, 255, 255, 0.94);
   --ifm-navbar-shadow: 0 1px 0 rgba(22, 28, 45, 0.08);
   --ifm-navbar-height: 4.15rem;
   --ifm-menu-color: #555d73;
-  --ifm-menu-color-active: #4338ca;
+  --ifm-menu-color-active: #286f69;
   --ifm-menu-link-padding-horizontal: 0.8rem;
   --ifm-menu-link-padding-vertical: 0.48rem;
   --ifm-code-font-size: 88%;
   --ifm-code-background: #f2f3fb;
-  --ifm-code-color: #3d3aa3;
+  --ifm-code-color: #225e59;
   --ifm-pre-background: #11182b;
   --ifm-footer-background-color: #fff;
   --ifm-footer-color: #667085;
   --ifm-footer-link-color: #555d73;
   --ifm-footer-title-color: #1b2235;
-  --docusaurus-highlighted-code-line-bg: rgba(137, 132, 255, 0.15);
-  --learn-blue: #3b82f6;
+  --docusaurus-highlighted-code-line-bg: rgba(47, 130, 123, 0.15);
+  --learn-blue: #2f827b;
   --learn-orange: #a54100;
   --learn-ink: #0f172a;
   --learn-muted: #687087;
   --learn-line: #e8eaf2;
-  --learn-lavender: #f4f5ff;
+  --learn-lavender: #f0f7f6;
 }
 
 [data-theme='dark'] {
-  --ifm-color-primary: #a5a1ff;
-  --ifm-color-primary-dark: #8b84ff;
-  --ifm-color-primary-darker: #756cf6;
-  --ifm-color-primary-darkest: #6259d8;
-  --ifm-color-primary-light: #b7b4ff;
-  --ifm-color-primary-lighter: #c8c6ff;
-  --ifm-color-primary-lightest: #dddcff;
+  --ifm-color-primary: #73b7b1;
+  --ifm-color-primary-dark: #5ea69f;
+  --ifm-color-primary-darker: #4a938d;
+  --ifm-color-primary-darkest: #377f79;
+  --ifm-color-primary-light: #89c4bf;
+  --ifm-color-primary-lighter: #a4d1cd;
+  --ifm-color-primary-lightest: #c1e0dd;
   --ifm-color-content: #e6e8f0;
   --ifm-color-content-secondary: #a0a7ba;
   --ifm-background-color: #101421;
   --ifm-background-surface-color: #171c2c;
   --ifm-heading-color: #f5f6fb;
-  --ifm-link-color: #aaa6ff;
-  --ifm-link-hover-color: #d2d0ff;
+  --ifm-link-color: #83c5bf;
+  --ifm-link-hover-color: #b8dfdb;
   --ifm-navbar-background-color: rgba(16, 20, 33, 0.94);
   --ifm-menu-color: #c2c7d7;
-  --ifm-menu-color-active: #c3c0ff;
+  --ifm-menu-color-active: #a5d3ce;
   --ifm-code-background: #242a3c;
-  --ifm-code-color: #c8c5ff;
+  --ifm-code-color: #bedfdb;
   --ifm-pre-background: #0b1020;
   --ifm-footer-background-color: #141929;
   --ifm-footer-color: #a0a7ba;
@@ -74,7 +74,7 @@
   --learn-muted: #a0a7ba;
   --learn-line: #2b3246;
   --learn-lavender: #171c2c;
-  --docusaurus-highlighted-code-line-bg: rgba(165, 161, 255, 0.16);
+  --docusaurus-highlighted-code-line-bg: rgba(115, 183, 177, 0.16);
 }
 
 html {
@@ -90,7 +90,7 @@ body {
 }
 
 ::selection {
-  background: rgba(79, 70, 229, 0.2);
+  background: rgba(47, 130, 123, 0.2);
 }
 
 a {
@@ -100,7 +100,7 @@ a {
 a:focus-visible,
 button:focus-visible,
 input:focus-visible {
-  outline: 3px solid rgba(79, 70, 229, 0.35);
+  outline: 3px solid rgba(47, 130, 123, 0.35);
   outline-offset: 2px;
 }
 
@@ -148,7 +148,7 @@ input:focus-visible {
 
 .navbar__link:hover,
 .navbar__link--active {
-  background: rgba(79, 70, 229, 0.07);
+  background: rgba(47, 130, 123, 0.07);
   color: var(--ifm-color-primary) !important;
 }
 
@@ -156,13 +156,13 @@ input:focus-visible {
   margin-left: 0.45rem;
   padding: 0.48rem 0.85rem;
   border-radius: 0.58rem;
-  background: #4f46e5;
+  background: #2f827b;
   color: #fff;
   font-weight: 700;
 }
 
 .navbar__items--right > .navbar__item:last-of-type:not(.clean-btn):hover {
-  background: #4338ca;
+  background: #286f69;
   color: #fff !important;
 }
 
@@ -212,19 +212,19 @@ input:focus-visible {
 }
 
 .menu__link:hover {
-  background: rgba(79, 70, 229, 0.07);
+  background: rgba(47, 130, 123, 0.07);
   color: var(--ifm-color-primary);
 }
 
 .menu__link--active:not(.menu__link--sublist) {
-  background: #eeedff;
-  color: #4338ca;
+  background: #e2f0ee;
+  color: #286f69;
   font-weight: 700;
 }
 
 [data-theme='dark'] .menu__link--active:not(.menu__link--sublist) {
-  background: rgba(165, 161, 255, 0.16);
-  color: #c6c3ff;
+  background: rgba(115, 183, 177, 0.16);
+  color: #a5d3ce;
 }
 
 .menu__list .menu__list {
@@ -325,14 +325,14 @@ input:focus-visible {
 .theme-doc-markdown blockquote {
   margin: 1.25rem 0;
   padding: 0.85rem 1rem;
-  border-left: 3px solid #8b84ff;
+  border-left: 3px solid #5ea69f;
   border-radius: 0 0.6rem 0.6rem 0;
   background: var(--ifm-background-surface-color);
   color: var(--learn-muted);
 }
 
 .theme-doc-markdown code {
-  border: 1px solid rgba(79, 70, 229, 0.08);
+  border: 1px solid rgba(47, 130, 123, 0.08);
   border-radius: 0.32rem;
   font-weight: 550;
 }
@@ -380,7 +380,7 @@ pre {
 }
 
 .pagination-nav__link:hover {
-  border-color: #bbb7ff;
+  border-color: #a6d1cd;
   box-shadow: 0 7px 22px rgba(42, 39, 91, 0.07);
 }
 
@@ -418,13 +418,20 @@ pre {
 }
 
 .button--primary {
-  border-color: #4f46e5;
-  background: #4f46e5;
+  border-color: #2f827b;
+  background: #2f827b;
 }
 
 .button--primary:hover {
-  border-color: #4338ca;
-  background: #4338ca;
+  border-color: #286f69;
+  background: #286f69;
+}
+
+.pdf-document-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1rem 0;
 }
 
 @media (max-width: 996px) {
