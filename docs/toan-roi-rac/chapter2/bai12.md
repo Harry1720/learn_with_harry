@@ -8,8 +8,11 @@ sidebar_position: 6
     Tải file PDF
   </a>
 </div>
+
 ## 12.1. Nguyên lý cộng & nguyên lý bù trừ
+
 ### 12.1.1. **Nguyên lý cộng**
+
 - Giả sử một công việc có thể được thực hiện theo một trong $k$ **<u>phương án</u>** $A$<sub>1</sub>, $A$<sub>2</sub>, …, $A$<sub>k</sub>. Trong đó có $n$<sub>1</sub> **<u>cách</u>** thực hiện phương án $A$<sub>1</sub>, $n$<sub>2</sub> cách thực hiện phương án $A$<sub>2</sub>, …, $n$<sub>k</sub> cách thực hiện phương án $A$<sub>k</sub>. Khi đó, công việc có thể thực hiện bởi:
 
 $$
@@ -19,7 +22,7 @@ $$
 ### 12.1.2. **Nguyên lý cộng mở rộng – Nguyên lý bù trừ**
   - ***Ví dụ 1:*** Để chuẩn bị vào giai đoạn 2, một nhóm sinh viên gồm: 150 sinh viên chương trình 1 đã ghi tên hộc môn Toán rời rạc và 120 sinh viên ghi tên học Vi tích phân 3 ở học kỳ này. Hỏi có bao nhiêu sinh viên trong nhóm này. Biết rằng có 50 sinh viên ghi tên học cả hai môn.
 
-  ![](./img/image63.png)
+    ![](./img/image63.png)
 
     - Gọi $A$ là tập hợp các sinh viên ghi tên học môn Toán rời rạc và $B$ là tập hợp các sinh viên ghi tên học Vi tích phân 3.
 
