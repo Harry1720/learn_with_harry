@@ -130,7 +130,7 @@ $$
   **Giải:** Số lượng mật khẩu gồm 6 chữ số theo yêu cầu đề: ${\bar{A}}_{10}^{6} = 10^{6} = 1000000$.
 
 ## 13.5. Hoán vị lặp
-- Cho <u>$n$ đối tượng</u>, trong đó <u>có **$n$<sub>i</sub> đối tượng loại $i$** giống hệt nhau</u> ($$i$ =$1,2,…,$k$) và **$n$<sub>1</sub> + $n$<sub>2</sub>,…+ $n$<sub>k</sub> = $n$.**
+- Cho <u>$n$ đối tượng</u>, trong đó <u>có **$n$<sub>i</sub> đối tượng loại $i$** giống hệt nhau</u> ($i$ =$1,2,…,$k$) và **$n$<sub>1</sub> + $n$<sub>2</sub>,…+ $n$<sub>k</sub> = $n$.**
 
 - Nghĩa là:
 
