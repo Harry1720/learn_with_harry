@@ -131,7 +131,7 @@ $$
 
 ## 13.5. Hoán vị lặp
 
-- Cho <u>$n$ đối tượng</u>, trong đó <u>có **$n_i$ đối tượng loại $i$** giống hệt nhau</u> (\(i = 1, 2, \ldots, k\)) và **\(n_1 + n_2 + \ldots + n_k = n\)**.
+- Cho **$n$ đối tượng**, trong đó có **$n_i$ đối tượng loại $i$ giống hệt nhau** ($i = 1, 2, \ldots, k$) và **$n_1 + n_2 + \cdots + n_k = n$**.
 
 - Nghĩa là:
 
@@ -211,4 +211,4 @@ $$
 
 - Tương tự; nếu **$a$<sub>8</sub> = 7; 9** ta cũng có 1260 số thỏa mãn.
 
--Suy ra: số các số thỏa mãn đầu bài là: **1260 + 1260 + 1260 = 3780 số.**
+- Suy ra: số các số thỏa mãn đầu bài là: **1260 + 1260 + 1260 = 3780 số.**
