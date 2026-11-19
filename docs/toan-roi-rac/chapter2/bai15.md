@@ -183,9 +183,9 @@ Vậy hệ số của $x^3 y^5 z$ là $-48384$.
 
     - Gọi **$a$<sub>j</sub>** là **số trận** mà đội đã chơi từ ngày đầu tháng **đến hết ngày $j$.**
 
-    - Khi đó 1 $\le a$<sub>1</sub> \< a<sub>2</sub>\< ... \< a<sub>30</sub> \< 45
+    - Khi đó \(1 \leq a_1 < a_2 < \ldots < a_{30} \leq 45\)
 
-      ⇔ 15 $\le a$<sub>1</sub> + 14\< a<sub>2</sub> + 14 \< ... \< a<sub>30</sub> + 14 \< 59.
+      \(\Leftrightarrow 15 \leq a_1 + 14 < a_2 + 14 < \ldots < a_{30} + 14 \leq 59.\)
 
     - **Sáu mươi** số nguyên $a$<sub>1</sub>, $a$<sub>2</sub>, ..., $a$<sub>30</sub>, $a$<sub>1</sub> + 14, $a$<sub>2</sub> + 14, ..., $a$<sub>30</sub> + 14 nằm giữa 1 và 59.
 
