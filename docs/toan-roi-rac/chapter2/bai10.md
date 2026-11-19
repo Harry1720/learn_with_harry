@@ -50,7 +50,7 @@ ii) $f$ *không* đơn ánh $\Leftrightarrow$ "$\exists x_1, x_2 \in X, x_1 \neq
   Do đó $f$ là đơn ánh.
 
 
-## 10.2. **Toàn ánh:**
+## 10.2. **Toàn ánh**
 - Ánh xạ $f$ từ $X$ vào $Y$ được gọi là toàn ánh (surjection hoặc onto) nếu ***mỗi** phần tử của $Y$* đều là **ảnh** của **<u>ít nhất một</u>** ***phần tử nào đó của $X$*** qua ánh xạ $f$ (sao cho $f$($x$) = $y$).
   $\forall y \in Y, \exists x \in X: y = f(x) \text{. Tức là } f(X) = Y$
 

@@ -132,7 +132,7 @@ title: "Bài 4: VỊ TỪ VÀ LƯỢNG TỪ"
 
   ***Ví dụ:*** $\overline{\forall x, x^2 - 3x + 2 = 0} \Leftrightarrow \exists x, x^2 - 3x + 2 \neq 0$
 
-### 4.1.4. Các quy tắc phổ dụng:
+### 4.1.4. Các quy tắc phổ dụng
 
 - **Đặc biệt hóa phổ dụng**
   $$
