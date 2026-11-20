@@ -2,6 +2,12 @@
 title: "Chương 3 - Bài 16: SỐ NGUYÊN"
 ---
 
+<div className="pdf-document-actions">
+  <a className="button button--primary" href="/pdfs/toan-roi-rac/chapter3/chap3.pdf" download="bai16-toan-roi-rac.pdf" target="_blank" rel="noreferrer">
+    Tải file PDF
+  </a>
+</div>
+
 ## 16.1. Phép chia
 
 - **Định nghĩa.** Cho hai số nguyên $a$ và $b \neq 0$. Ta nói $a$ *chia hết cho* $b$ nếu tồn tại số nguyên $m$ sao cho $\boldsymbol{a = mb}$, ký hiệu $\boldsymbol{a \vdots b}$. Khi đó

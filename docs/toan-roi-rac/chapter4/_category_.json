@@ -2,7 +2,8 @@
   "label": "Chương 4: QUAN HỆ (RELATIONS)",
   "position": 4,
   "link": {
-    "type": "doc",
-    "id": "toan-roi-rac/chapter4/chap4"
+    "type": "generated-index",
+    "slug": "/category/toan-roi-rac/chapter4",
+    "description": "Nội dung chương 4."
   }
 }

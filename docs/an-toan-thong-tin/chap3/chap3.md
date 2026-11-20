@@ -15,7 +15,7 @@ sidebar_position: 3
 
 - **Cuộc chiến của giao thức truyền thông:**
 
-![Ảnh minh họa image1.png](./image1.png)
+![Ảnh minh họa image1.png](./img/image1.png)
 <figcaption><p>Hình 8. Cuộc chiến các giao thức truyền thông</p></figcaption>
 
 - Hiện tại áp dụng phổ biến **TCP/IP**
@@ -44,7 +44,7 @@ sidebar_position: 3
 
   - <span class="mark">Còn ở đối với **máy tính nhận** dữ liệu thì chúng phải được thực hiện **từ dưới lên.**</span>
 
-![A diagram of data processing AI-generated content may be incorrect.](./image2.png) ![A diagram of a computer network AI-generated content may be incorrect.](./image3.png)
+![A diagram of data processing AI-generated content may be incorrect.](./img/image2.png) ![A diagram of a computer network AI-generated content may be incorrect.](./img/image3.png)
 
 Hình 9. Mô hình TCP/IP
 
@@ -126,7 +126,7 @@ Hình 9. Mô hình TCP/IP
 
 - **Cách hoạt động:** Dùng cho **trình duyệt web di động** <span class="mark">đời cũ.</span>
 
-![A diagram of a computer network AI-generated content may be incorrect.](./image4.png)
+![A diagram of a computer network AI-generated content may be incorrect.](./img/image4.png)
 <figcaption><p>Hình 10. Các tầng OSI và các mối đe dọa</p></figcaption>
 
 **<span class="mark"><u>Giải thích 1 số thuật ngữ:</u></span>**
@@ -255,7 +255,7 @@ Khi không cần nữa, bạn **<span class="mark">"unmount"</span>** để ng�
 
 - Công cụ để phân tích và xác định sự có mặt của các lỗ hổng và cách thức thực hiện khai thác: tường lửa, hệ thống phát hiện xâm nhập, phân tích giao thức, nghe lén và quét lỗ hổng.
 
-![A diagram of a system AI-generated content may be incorrect.](./image5.png)
+![A diagram of a system AI-generated content may be incorrect.](./img/image5.png)
 
 **Các kiểu tấn công:**
 
@@ -339,7 +339,7 @@ Khi không cần nữa, bạn **<span class="mark">"unmount"</span>** để ng�
 
 **n/ Giao thức điều khiển truyền dữ liệu TCP**
 
-![A diagram of a computer network AI-generated content may be incorrect.](./image6.png)
+![A diagram of a computer network AI-generated content may be incorrect.](./img/image6.png)
 <figcaption><p>Hình 11. Cơ chế bắt tay 3 bước</p></figcaption>
 
 là một <span class="mark">giao thức "hướng kết nối" (connection oriented),</span> nghĩa là cần phải <span class="mark">thiết lập liên kết giữa hai thực thể TCP trước khi chúng trao đổi dữ liệu</span> với nhau.
@@ -404,12 +404,12 @@ là một <span class="mark">giao thức "hướng kết nối" (connection orie
 
   - nhưng hacker không trả lời 🡪 máy **tính nạn nhân luôn ở trong tình trạng chờ** và dần dần sẽ **cạn kiệt tài nguyên không thể phục vụ được nữa**
 
-![A diagram of a computer network AI-generated content may be incorrect.](./image7.png)
+![A diagram of a computer network AI-generated content may be incorrect.](./img/image7.png)
 <figcaption><p>Hình 12. Tấn công TCP SYN Flood</p></figcaption>
 
 ### 3.3.2. Giả mạo địa chỉ IP (IP Spoofing)
 
-![A diagram of a network AI-generated content may be incorrect.](./image8.png)
+![A diagram of a network AI-generated content may be incorrect.](./img/image8.png)
 <figcaption><p>Hình 13. IP Spoofing</p></figcaption>
 
 tạo ra các gói TCP/IP sử dụng địa chỉ IP giả với mục đích để **che giấu danh tính hoặc giả mạo danh tính** chủ sở hữu của địa chỉ IP.
@@ -608,7 +608,7 @@ Hacker có thể **chiếm quyền điều khiển phiên làm việc** giữa U
 
 - **Cách thức hoạt động**
 
-![Ảnh minh họa image9.png](./image9.png)
+![Ảnh minh họa image9.png](./img/image9.png)
 <figcaption><p>Hình 14. Tấn công giả mạo DNS</p></figcaption>
 
 - **Bước 1: Kẻ tấn công chèn bản ghi DNS giả vào máy chủ DNS.**
