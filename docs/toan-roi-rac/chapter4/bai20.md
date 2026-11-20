@@ -4,7 +4,7 @@ sidebar_position: 4
 ---
 
 <div className="pdf-document-actions">
-  <a className="button button--primary" href="/pdfs/toan-roi-rac/chapter2/bai7.pdf" download="bai7-toan-roi-rac.pdf" target="_blank" rel="noreferrer">
+  <a className="button button--primary" href="/pdfs/toan-roi-rac/chapter4/bai20.pdf" download="bai20-toan-roi-rac.pdf" target="_blank" rel="noreferrer">
     Tải file PDF
   </a>
 </div>

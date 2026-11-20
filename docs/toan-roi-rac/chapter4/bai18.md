@@ -4,7 +4,7 @@ sidebar_position: 2
 ---
 
 <div className="pdf-document-actions">
-  <a className="button button--primary" href="/pdfs/toan-roi-rac/chapter2/bai7.pdf" download="bai7-toan-roi-rac.pdf" target="_blank" rel="noreferrer">
+  <a className="button button--primary" href="/pdfs/toan-roi-rac/chapter4/bai18.pdf" download="bai18-toan-roi-rac.pdf" target="_blank" rel="noreferrer">
     Tải file PDF
   </a>
 </div>
@@ -59,7 +59,23 @@ sidebar_position: 2
   
   - Dựa trên định nghĩa "cùng màu", các cặp trong quan hệ *$R$* là:
 
-  $$R = \{(\text{"bút đỏ"}, \text{"bút đỏ"}), (\text{"bút đỏ"}, \text{"vở đỏ"}), (\text{"vở đỏ"}, \text{"bút đỏ"}), (\text{"vở đỏ"}, \text{"vở đỏ"}), (\text{"bút xanh"}, \text{"bút xanh"}), (\text{"bút xanh"}, \text{"vở xanh"}), (\text{"vở xanh"}, \text{"bút xanh"}), (\text{"vở xanh"}, \text{"vở xanh"})\}.$$
+$$
+\begin{aligned}
+R = \{&
+(\text{"bút đỏ"}, \text{"bút đỏ"}), 
+(\text{"bút đỏ"}, \text{"vở đỏ"}),\\
+&
+(\text{"vở đỏ"}, \text{"bút đỏ"}), 
+(\text{"vở đỏ"}, \text{"vở đỏ"}),\\
+&
+(\text{"bút xanh"}, \text{"bút xanh"}), 
+(\text{"bút xanh"}, \text{"vở xanh"}),\\
+&
+(\text{"vở xanh"}, \text{"bút xanh"}), 
+(\text{"vở xanh"}, \text{"vở xanh"})
+\}.
+\end{aligned}
+$$
 
   - Tập *$A$* được phân thành các lớp tương đương dựa trên quan hệ *$R$*:
     - Lớp tương đương của "bút đỏ" là:
@@ -183,10 +199,10 @@ $$
 - Chúng phân hoạch **$Z$** thành các tập con rời nhau.
 
 - *Chú ý rằng*:
-  - \[0\]*<sub>$m$</sub>* = \[*$m$*\]*<sub>$m$</sub>* = \[2*$m$*\]*<sub>$m$</sub>* = …
-  - \[1\]*<sub>$m$</sub>* = \[*$m$* + 1\]*<sub>$m$</sub>* = \[2*$m$* +1\]*<sub>$m$</sub>* = …
-  - ...
-  - \[*$m$* – 1\]*<sub>$m$</sub>* = \[2*$m$* – 1\]*<sub>$m$</sub>* = \[3*$m$* – 1\]*<sub>$m$</sub>* = …
+  - $[0]_m = [m]_m = [2m]_m = \ldots$
+  - $[1]_m = [m + 1]_m = [2m + 1]_m = \ldots$
+  - $\ldots$
+  - $[m - 1]_m = [2m - 1]_m = [3m - 1]_m = \ldots$
 
 - **Mỗi lớp tương đương** này được gọi là ***số nguyên modulo $m$.***
 
