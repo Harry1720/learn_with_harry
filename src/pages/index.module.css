@@ -19,18 +19,6 @@
     linear-gradient(180deg, #f7fbfa 0%, #f4f9f8 100%);
 }
 
-.heroGlow {
-  position: absolute;
-  z-index: -1;
-  top: 5rem;
-  right: 10%;
-  width: 27rem;
-  height: 27rem;
-  border: 1px solid rgba(47, 130, 123, 0.07);
-  border-radius: 50%;
-  box-shadow: 0 0 0 3.5rem rgba(47, 130, 123, 0.018), 0 0 0 7rem rgba(47, 130, 123, 0.014);
-}
-
 .heroInner {
   position: relative;
   display: grid;
@@ -83,6 +71,10 @@
 
 .heroCopy h1 span {
   color: #2f827b;
+}
+
+.heroTitleBreak {
+  display: block;
 }
 
 .heroSubtitle {
@@ -183,127 +175,140 @@
   place-items: center;
 }
 
-.orbit {
-  position: absolute;
-  border: 1px solid rgba(47, 130, 123, 0.11);
-  border-radius: 50%;
-  transform: rotate(-23deg);
-}
-
-.orbitOne {
-  width: 19rem;
-  height: 12rem;
-}
-
-.orbitTwo {
-  width: 23rem;
-  height: 15rem;
-  transform: rotate(36deg);
-}
-
-.heroBook {
+.codeWindow {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 12rem;
-  height: 14.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.55);
-  border-radius: 1.1rem 1.3rem 1.3rem 0.8rem;
-  background: linear-gradient(145deg, #40948d 0%, #2f827b 52%, #225e59 100%);
-  box-shadow: 0 2rem 3.2rem rgba(47, 130, 123, 0.24), inset 0 1px 0 rgba(255, 255, 255, 0.28);
-  color: #fff;
-  transform: rotate(-7deg);
-}
-
-.bookSpine {
-  position: absolute;
-  top: 0.7rem;
-  bottom: 0.7rem;
-  left: 0.65rem;
-  width: 1px;
-  background: rgba(255, 255, 255, 0.25);
-}
-
-.bookSymbol {
-  display: grid;
-  width: 5rem;
-  height: 5rem;
-  place-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  border-radius: 1.2rem;
-  background: rgba(255, 255, 255, 0.14);
-  font-family: Georgia, serif;
-  font-size: 3.5rem;
-}
-
-.bookLines {
-  display: grid;
-  gap: 0.48rem;
-  width: 6rem;
-  margin-top: 1.3rem;
-}
-
-.bookLines i {
-  height: 0.28rem;
-  border-radius: 99px;
-  background: rgba(255, 255, 255, 0.36);
-}
-
-.bookLines i:nth-child(2) {
-  width: 78%;
-}
-
-.bookLines i:nth-child(3) {
-  width: 57%;
-}
-
-.floatChip {
-  position: absolute;
   z-index: 1;
+  width: min(100%, 27rem);
+  overflow: hidden;
+  border: 1px solid rgba(126, 145, 176, 0.34);
+  border-radius: 1rem;
+  background: #111827;
+  box-shadow: 0 1.5rem 3rem rgba(3, 8, 20, 0.28);
+  color: #e7edf8;
+}
+
+.codeWindowHeader,
+.codeWindowFooter {
+  display: flex;
+  min-height: 2.8rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.65rem 0.9rem;
+  background: #171f30;
+  color: #96a2b8;
+  font-size: 0.66rem;
+}
+
+.codeWindowHeader {
+  border-bottom: 1px solid rgba(126, 145, 176, 0.18);
+}
+
+.windowControls {
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 0.3rem;
+}
+
+.windowControls i,
+.codeWindowStatus i,
+.codeWindowFooter i {
+  display: block;
+  width: 0.48rem;
+  height: 0.48rem;
+  border-radius: 50%;
+  background: #f87171;
+}
+
+.windowControls i:nth-child(2) {
+  background: #fbbf24;
+}
+
+.windowControls i:nth-child(3) {
+  background: #34d399;
+}
+
+.codeFileLabel {
+  overflow: hidden;
+  color: #c5ccda;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.codeWindowStatus,
+.codeWindowFooter > span:first-child {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.72rem 0.9rem;
-  border: 1px solid rgba(231, 230, 248, 0.9);
-  border-radius: 0.9rem;
-  background: rgba(255, 255, 255, 0.91);
-  box-shadow: 0 12px 30px rgba(28, 75, 71, 0.1);
-  color: #292d43;
-  font-size: 0.76rem;
-  font-weight: 700;
+  gap: 0.4rem;
+  white-space: nowrap;
 }
 
-.floatChipTop {
-  top: 2.2rem;
-  right: 0.5rem;
-  color: #2f827b;
-  transform: rotate(4deg);
+.codeWindowStatus {
+  color: #7dd3c7;
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
 }
 
-.floatChipBottom {
-  bottom: 2.25rem;
-  left: 0.5rem;
-  color: #2f827b;
-  transform: rotate(-4deg);
+.codeWindowStatus i,
+.codeWindowFooter i {
+  width: 0.38rem;
+  height: 0.38rem;
+  background: #45c7a8;
+  box-shadow: 0 0 0 3px rgba(69, 199, 168, 0.12);
 }
 
-.floatDot {
-  position: absolute;
-  right: 2.2rem;
-  bottom: 3.2rem;
-  width: 0.75rem;
-  height: 0.75rem;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  background: #f97316;
-  box-shadow: 0 0 0 5px rgba(249, 115, 22, 0.15);
+.codeEditor {
+  display: grid;
+  gap: 0.72rem;
+  padding: 1.45rem 1rem 1.5rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: clamp(0.68rem, 1.2vw, 0.82rem);
+}
+
+.codeLine {
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr);
+  gap: 0.75rem;
+  align-items: baseline;
+}
+
+.codeLine > span {
+  color: #64718a;
+  text-align: right;
+  user-select: none;
+}
+
+.codeLine code {
+  overflow: hidden;
+  background: transparent;
+  color: #d9e1ee;
+  font: inherit;
+  text-overflow: ellipsis;
+  white-space: pre;
+}
+
+.codeLine b {
+  color: #c4a7ff;
+  font-weight: 600;
+}
+
+.codeLine i {
+  color: #8dd6aa;
+  font-style: normal;
+}
+
+.codeWindowFooter {
+  min-height: 2.25rem;
+  border-top: 1px solid rgba(126, 145, 176, 0.18);
+  background: #151d2b;
+  font-size: 0.61rem;
 }
 
 .statsWrap {
   position: relative;
   max-width: 1200px;
+  padding-top: 1.25rem;
   padding-bottom: 2.4rem;
 }
 
@@ -391,7 +396,7 @@
 
 .courseGrid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
   gap: 1.15rem;
 }
 
@@ -411,6 +416,11 @@
   transform: translateY(-3px);
   border-color: #bbdcd9;
   box-shadow: 0 18px 38px rgba(28, 75, 71, 0.1);
+}
+
+.courseCard:focus-within {
+  outline: 3px solid rgba(47, 130, 123, 0.34);
+  outline-offset: 3px;
 }
 
 .courseCardTop {
@@ -604,6 +614,69 @@
   color: #fff;
 }
 
+.ctaCourses {
+  display: grid;
+  width: min(100%, 21rem);
+  flex: 0 0 auto;
+  gap: 0.65rem;
+}
+
+.ctaCourse {
+  display: flex;
+  min-height: 4rem;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.23);
+  border-radius: 0.75rem;
+  background: rgba(9, 39, 38, 0.18);
+  color: #fff;
+  text-decoration: none;
+  transition: transform 150ms ease, background 150ms ease, border-color 150ms ease;
+}
+
+.ctaCourse:hover {
+  transform: translateX(2px);
+  border-color: rgba(255, 255, 255, 0.45);
+  background: rgba(9, 39, 38, 0.3);
+  color: #fff;
+  text-decoration: none;
+}
+
+.ctaCourse:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+
+.ctaCourseIcon {
+  display: grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 0.65rem;
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+}
+
+.ctaCourseText {
+  display: grid;
+  min-width: 0;
+  flex: 1;
+  gap: 0.1rem;
+}
+
+.ctaCourseText strong {
+  overflow-wrap: anywhere;
+  font-size: 0.82rem;
+  font-weight: 750;
+}
+
+.ctaCourseText small {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.7rem;
+}
+
 .ctaPattern {
   position: absolute;
   z-index: -1;
@@ -746,15 +819,34 @@
 
 [data-theme='dark'] .searchBox,
 [data-theme='dark'] .stats,
-[data-theme='dark'] .floatChip,
 [data-theme='dark'] .courseCard,
 [data-theme='dark'] .benefitCard {
   border-color: var(--home-line);
   background: var(--home-panel);
 }
 
-[data-theme='dark'] .searchBox input,
-[data-theme='dark'] .floatChip {
+[data-theme='dark'] .courseLabel {
+  background: rgba(115, 183, 177, 0.14);
+  color: #a5d3ce;
+}
+
+[data-theme='dark'] .courseIcon,
+[data-theme='dark'] .benefitIcon {
+  background: rgba(115, 183, 177, 0.15);
+  color: #a5d3ce;
+}
+
+[data-theme='dark'] .tag {
+  border-color: var(--home-line);
+  background: #1c2234;
+  color: #c5cad8;
+}
+
+[data-theme='dark'] .emptyState button {
+  background: #2f827b;
+}
+
+[data-theme='dark'] .searchBox input {
   color: var(--home-text);
 }
 
@@ -869,12 +961,15 @@
 
   .ctaCard {
     min-height: auto;
+    align-items: stretch;
+    flex-direction: column;
     padding: 1.75rem 1.35rem;
   }
 
-  .ctaBadge {
-    display: none;
+  .ctaCourses {
+    width: 100%;
   }
+
 }
 
 @media (max-width: 480px) {

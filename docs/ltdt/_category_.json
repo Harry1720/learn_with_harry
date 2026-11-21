@@ -1,0 +1,9 @@
+{
+  "label": "Lý thuyết đồ thị",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "slug": "/category/ltdt",
+    "description": "Trong bối cảnh khoa học máy tính và toán học ứng dụng ngày càng phát triển, Lý thuyết đồ thị đóng vai trò nền tảng trong việc mô hình hóa và giải quyết nhiều bài toán thực tiễn như mạng máy tính, giao thông, tối ưu hóa, phân tích mạng xã hội, lập lịch và thiết kế hệ thống. Đồ thị cung cấp một công cụ toán học mạnh mẽ để biểu diễn các đối tượng và mối quan hệ giữa chúng thông qua các đỉnh và cạnh. Thông qua việc nghiên cứu các khái niệm, định lý và thuật toán trên đồ thị, người học có thể hiểu rõ bản chất cấu trúc của các hệ thống phức tạp cũng như xây dựng các phương pháp giải quyết bài toán một cách hiệu quả và tối ưu. Việc nắm vững kiến thức Lý thuyết đồ thị không chỉ giúp củng cố tư duy logic và toán học mà còn tạo nền tảng quan trọng cho nhiều lĩnh vực chuyên sâu trong khoa học máy tính."
+  }
+}

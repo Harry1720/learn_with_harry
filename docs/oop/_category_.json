@@ -1,0 +1,9 @@
+{
+  "label": "Lập trình hướng đối tượng",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "slug": "/category/oop",
+    "description": "Trong bối cảnh công nghệ thông tin và phát triển phần mềm ngày càng phát triển mạnh mẽ, lập trình hướng đối tượng (OOP) giữ vai trò quan trọng trong việc xây dựng các chương trình có cấu trúc rõ ràng, dễ bảo trì và mở rộng. Thông qua việc tổ chức chương trình thành các lớp và đối tượng, cùng với việc vận dụng các nguyên lý cốt lõi như đóng gói, trừu tượng, kế thừa và đa hình trong ngôn ngữ C++, người học có thể nâng cao tư duy lập trình, khả năng thiết kế hệ thống và tạo nền tảng vững chắc cho việc phát triển các phần mềm quy mô lớn."
+  }
+}

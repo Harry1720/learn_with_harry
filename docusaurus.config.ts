@@ -10,7 +10,7 @@ import rehypeKatex from 'rehype-katex';
 const config: Config = {
   title: 'HarryHub',
   tagline: 'Học tập công nghệ với Harry',
-  favicon: 'img/devlearn-mark.svg',
+  favicon: 'img/devlearn-mark-dark.svg',
 
   markdown: { format: 'detect' },
 
@@ -57,17 +57,8 @@ const config: Config = {
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        // Keep the existing blog source files without exposing demo routes.
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -79,27 +70,39 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     colorMode: {
-      respectPrefersColorScheme: true,
+      defaultMode: 'dark',
+      respectPrefersColorScheme: false,
+    },
+    tableOfContents: {
+      minHeadingLevel: 2,
+      maxHeadingLevel: 3,
     },
     navbar: {
       title: 'HarryHub',
       logo: {
         alt: 'HarryHub Logo',
-        src: 'img/devlearn-mark.svg',
+        src: 'img/devlearn-mark-dark.svg',
+        srcDark: 'img/devlearn-mark-dark.svg',
       },
       items: [
         {
-          to: '/docs/category/toan-roi-rac',
+          type: 'dropdown',
+          label: 'Môn học',
           position: 'left',
-          label: 'Toán rời rạc',
+          items: [
+            {to: '/docs/category/toan-roi-rac', label: 'Toán rời rạc'},
+            {to: '/docs/category/attt', label: 'An toàn thông tin'},
+            {to: '/docs/category/cpp', label: 'C++'},
+            {to: '/docs/category/kcpm', label: 'Kiểm chứng phần mềm'},
+            {to: '/docs/category/oop', label: 'Lập trình hướng đối tượng'},
+            {to: '/docs/category/ktdl', label: 'Khai thác dữ liệu'},
+            {to: '/docs/category/cvip', label: 'Xử lý ảnh và thị giác máy tính'},
+            {to: '/docs/category/ltdt', label: 'Lý thuyết đồ thị'},
+            {to: '/docs/category/nhapmonit', label: 'Nhập môn IT'},
+          ],
         },
-        {
-          to: '/docs/category/an-toan-thong-tin',
-          label: 'An toàn thông tin',
-          position: 'left',
-        },
-        {to: '/blog', label: 'Bài viết', position: 'left'},
-        {to: '/docs/category/toan-roi-rac', label: 'Bắt đầu học', position: 'right'},
+        {to: '/about', label: 'Giới thiệu', position: 'left'},
+        {to: '/', label: 'Bắt đầu học', position: 'right'},
       ],
     },
     footer: {
@@ -114,7 +117,35 @@ const config: Config = {
             },
             {
               label: 'An toàn thông tin',
-              to: '/docs/category/an-toan-thong-tin',
+              to: '/docs/category/attt',
+            },
+            {
+              label: 'C++',
+              to: '/docs/category/cpp',
+            },
+            {
+              label: 'Kiểm chứng phần mềm',
+              to: '/docs/category/kcpm',
+            },
+            {
+              label: 'Lập trình hướng đối tượng',
+              to: '/docs/category/oop',
+            },
+            {
+              label: 'Khai thác dữ liệu',
+              to: '/docs/category/ktdl',
+            },
+            {
+              label: 'Xử lý ảnh và thị giác máy tính',
+              to: '/docs/category/cvip',
+            },
+            {
+              label: 'Lý thuyết đồ thị',
+              to: '/docs/category/ltdt',
+            },
+            {
+              label: 'Nhập môn IT',
+              to: '/docs/category/nhapmonit',
             },
           ],
         },
@@ -122,13 +153,17 @@ const config: Config = {
           title: 'Khám phá',
           items: [
             {
-              label: 'Bài viết',
-              to: '/blog',
+              label: 'Giới thiệu',
+              to: '/about',
+            },
+            {
+              label: 'Liên hệ',
+              to: '/about#contact',
             },
           ],
         },
       ],
-      copyright: `© ${new Date().getFullYear()} HarryHub · Học tập công nghệ với Harry.`,
+      copyright: '© 2026 HarryHub · Học tập công nghệ cùng Harry.',
     },
     prism: {
       theme: prismThemes.github,

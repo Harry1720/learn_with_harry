@@ -1,9 +1,9 @@
 {
-  "label": "C++",
+  "label": "Lập trình C++",
   "position": 3,
   "link": {
     "type": "generated-index",
     "slug": "/category/cpp",
-    "description": "Các chương của môn C++."
+    "description": "Trong bối cảnh chuyển đổi số diễn ra mạnh mẽ, công nghệ thông tin ngày càng đóng vai trò quan trọng trong hầu hết các lĩnh vực của đời sống. Môn học Kỹ thuật lập trình với ngôn ngữ C++ giúp người học trang bị kiến thức về tư duy thuật toán, cấu trúc dữ liệu, lập trình hướng đối tượng và kỹ năng giải quyết vấn đề bằng chương trình máy tính. Việc nắm vững C++ không chỉ tạo nền tảng cho các môn học chuyên sâu như Cấu trúc dữ liệu và giải thuật, Trí tuệ nhân tạo, Phát triển phần mềm mà còn giúp rèn luyện tư duy logic và khả năng lập trình một cách khoa học, hiệu quả."
   }
 }

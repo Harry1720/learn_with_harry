@@ -1,0 +1,9 @@
+{
+  "label": "Khai thác dữ liệu",
+  "position": 6,
+  "link": {
+    "type": "generated-index",
+    "slug": "/category/ktdl",
+    "description": "Trong bối cảnh chuyển đổi số diễn ra mạnh mẽ, dữ liệu ngày càng trở thành nguồn tài nguyên quan trọng trong hầu hết các lĩnh vực như kinh tế, tài chính, thương mại điện tử, y tế, giáo dục, giao thông và quản trị doanh nghiệp. Sự bùng nổ của dữ liệu lớn (Big Data) đặt ra yêu cầu cần có các phương pháp và công cụ hiệu quả để thu thập, xử lý, phân tích và trích xuất tri thức có giá trị từ dữ liệu. Khai thác dữ liệu (Data Mining) là một lĩnh vực cốt lõi giúp phát hiện các mẫu ẩn, xu hướng và mối quan hệ tiềm tàng trong tập dữ liệu, từ đó hỗ trợ quá trình ra quyết định một cách khoa học, chính xác và tự động. Việc nghiên cứu và nắm vững các kiến thức về Khai thác dữ liệu không chỉ giúp người học hiểu rõ bản chất của các thuật toán, mô hình phân tích mà còn tạo nền tảng quan trọng cho việc phát triển các hệ thống thông minh trong kỷ nguyên trí tuệ nhân tạo và khoa học dữ liệu."
+  }
+}

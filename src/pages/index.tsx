@@ -3,44 +3,9 @@ import {useMemo, useState} from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
+import {courses} from '../data/siteConfig';
 
 import styles from './index.module.css';
-
-type Course = {
-  title: string;
-  label: string;
-  description: string;
-  chapters: string;
-  tags: string[];
-  href: string;
-  icon: 'logic' | 'shield';
-  tone: 'violet' | 'blue';
-};
-
-const courses: Course[] = [
-  {
-    title: 'Toán rời rạc',
-    label: 'NỀN TẢNG TOÁN HỌC',
-    description:
-      'Logic, tập hợp, phép đếm, quan hệ và các kiến thức nền tảng cho khoa học máy tính.',
-    chapters: '5 chương',
-    tags: ['Logic', 'Tập hợp', 'Đếm', 'Quan hệ'],
-    href: '/docs/category/toan-roi-rac',
-    icon: 'logic',
-    tone: 'violet',
-  },
-  {
-    title: 'An toàn thông tin',
-    label: 'MẬT MÃ & BẢO MẬT',
-    description:
-      'Từ lỗ hổng mạng và giao thức đến mật mã, chữ ký số, chứng chỉ số và hàm băm.',
-    chapters: '11 chương',
-    tags: ['Mật mã', 'Mạng máy tính', 'Chữ ký số', 'SHA-256'],
-    href: '/docs/category/an-toan-thong-tin',
-    icon: 'shield',
-    tone: 'blue',
-  },
-];
 
 function Icon({name, size = 20}: {name: string; size?: number}) {
   const common = {
@@ -69,6 +34,43 @@ function Icon({name, size = 20}: {name: string; size?: number}) {
         <svg {...common}>
           <path d="M12 3 19 6v5c0 4.6-2.8 8-7 10-4.2-2-7-5.4-7-10V6l7-3Z" />
           <path d="m9 12 2 2 4-4" />
+        </svg>
+      );
+    case 'code':
+      return (
+        <svg {...common}>
+          <path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16" />
+        </svg>
+      );
+    case 'verify':
+      return (
+        <svg {...common}>
+          <path d="M12 3 19 6v5c0 4.6-2.8 8-7 10-4.2-2-7-5.4-7-10V6l7-3Z" />
+          <path d="m9 12 2 2 4-4" />
+        </svg>
+      );
+    case 'data':
+      return (
+        <svg {...common}>
+          <ellipse cx="12" cy="5.5" rx="7.5" ry="2.8" />
+          <path d="M4.5 5.5v6c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8v-6M4.5 11.5v6c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8v-6" />
+        </svg>
+      );
+    case 'image':
+      return (
+        <svg {...common}>
+          <rect x="3.5" y="4.5" width="17" height="15" rx="2" />
+          <circle cx="9" cy="9" r="1.5" />
+          <path d="m5 17 5-5 3.5 3 2.5-2 3 3" />
+        </svg>
+      );
+    case 'graph':
+      return (
+        <svg {...common}>
+          <circle cx="6" cy="6" r="2" />
+          <circle cx="18" cy="7" r="2" />
+          <circle cx="12" cy="18" r="2" />
+          <path d="m7.8 7 8.3-.1M7 7.8l4 8.4m5.8-7.4-3.7 7.5" />
         </svg>
       );
     case 'search':
@@ -108,26 +110,30 @@ function Icon({name, size = 20}: {name: string; size?: number}) {
   }
 }
 
-function CourseCard({course}: {course: Course}) {
+function CourseCard({course}: {course: (typeof courses)[number]}) {
   return (
-    <article className={`${styles.courseCard} ${styles[course.tone]}`}>
+    <article className={styles.courseCard}>
       <div className={styles.courseCardTop}>
         <span className={styles.courseIcon}>
           <Icon name={course.icon} size={21} />
         </span>
-        <span className={styles.courseLabel}>{course.label}</span>
+        {/* <span className={styles.courseLabel}>{course.label}</span> */}
       </div>
       <Heading as="h3">{course.title}</Heading>
       <p className={styles.courseDescription}>{course.description}</p>
-      <div className={styles.tagList}>
-        {course.tags.map((tag) => (
-          <span className={styles.tag} key={tag}>
-            {tag}
-          </span>
-        ))}
-      </div>
+      {course.tags.length > 0 && (
+        <div className={styles.tagList}>
+          {course.tags.map((tag) => (
+            <span className={styles.tag} key={tag}>
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
       <div className={styles.courseCardBottom}>
-        <span>{course.chapters}</span>
+        {/* <span>{course.chapterCount !== undefined
+          ? `${course.chapterCount} chương${course.hasChapterPdfs ? ' · PDF' : ''}`
+          : 'Nội dung đang cập nhật'}</span> */}
         <Link className={styles.courseLink} to={course.href}>
           Xem mục lục <Icon name="arrow" size={17} />
         </Link>
@@ -142,7 +148,7 @@ export default function Home(): ReactNode {
     const normalizedQuery = query.trim().toLocaleLowerCase('vi');
     if (!normalizedQuery) return courses;
     return courses.filter((course) =>
-      [course.title, course.label, course.description, ...course.tags]
+      [course.title, course.label, course.description, ...course.tags, ...(course.searchTerms ?? [])]
         .join(' ')
         .toLocaleLowerCase('vi')
         .includes(normalizedQuery),
@@ -155,17 +161,16 @@ export default function Home(): ReactNode {
       description="Ghi chú học tập trình bày theo chương bằng tiếng Việt.">
       <main className={styles.homepage}>
         <section className={styles.hero}>
-          <div className={styles.heroGlow} />
           <div className={`container ${styles.heroInner}`}>
             <div className={styles.heroCopy}>
               {/* <span className={styles.eyebrow}>
                 <span className={styles.sparkle}>✦</span> GHI CHÚ HỌC TẬP CÔNG NGHỆ BẰNG TIẾNG VIỆT
               </span> */}
               <Heading as="h1">
-                Học IT theo <span>cách của bạn.</span>
+                Học IT theo<br className={styles.heroTitleBreak} /> <span>cách của bạn.</span>
               </Heading>
               <p className={styles.heroSubtitle}>
-                Từng khái niệm được sắp xếp rõ ràng theo chương, giúp bạn ôn tập dễ dàng và xây nền tảng vững chắc.
+                Từ kiến thức nền tảng đến kỹ năng thực hành, khám phá tài liệu và kiến thức công nghệ được tổ chức một cách dễ hiểu, giúp bạn học tập và phát triển từng ngày.
               </p>
 
               <form
@@ -202,56 +207,57 @@ export default function Home(): ReactNode {
             </div>
 
             <div className={styles.heroAside} aria-hidden="true">
-              <div className={`${styles.orbit} ${styles.orbitOne}`} />
-              <div className={`${styles.orbit} ${styles.orbitTwo}`} />
-              {/* <div className={styles.heroBook}>
-                <div className={styles.bookSpine} />
-                <div className={styles.bookSymbol}>∑</div>
-                <div className={styles.bookLines}>
-                  <i />
-                  <i />
-                  <i />
+              <div className={styles.codeWindow}>
+                <div className={styles.codeWindowHeader}>
+                  <span className={styles.windowControls}><i /><i /><i /></span>
+                  <span className={styles.codeFileLabel}>harryhub.ts</span>
+                  <span className={styles.codeWindowStatus}><i /> READY</span>
+                </div>
+                <div className={styles.codeEditor}>
+                  <div className={styles.codeLine}><span>01</span><code><b>const</b> learningPath = [</code></div>
+                  <div className={styles.codeLine}><span>02</span><code>&nbsp;&nbsp;<i>'logic'</i>, <i>'security'</i>,</code></div>
+                  <div className={styles.codeLine}><span>03</span><code>&nbsp;&nbsp;<i>'software'</i>, <i>'data'</i>,</code></div>
+                  <div className={styles.codeLine}><span>04</span><code>&nbsp;&nbsp;<i>'programming'</i>,</code></div>
+                  <div className={styles.codeLine}><span>05</span><code>];</code></div>
+                  <div className={styles.codeLine}><span>06</span><code><b>learn</b>(learningPath);</code></div>
+                </div>
+                <div className={styles.codeWindowFooter}>
+                  <span><i /> HarryHub learning workspace</span>
+                  <span>⌘ 01</span>
                 </div>
               </div>
-              <span className={`${styles.floatChip} ${styles.floatChipTop}`}>
-                <Icon name="logic" size={18} /> Logic
-              </span>
-              <span className={`${styles.floatChip} ${styles.floatChipBottom}`}>
-                <Icon name="shield" size={18} /> Bảo mật
-              </span>
-              <span className={styles.floatDot} /> */}
             </div>
           </div>
 
           <div className={`container ${styles.statsWrap}`}>
             <div className={styles.stats}>
               <div>
-                <strong>3</strong>
+                <strong>{courses.length}</strong>
                 <span>Môn học</span>
               </div>
               <div>
-                <strong>16</strong>
+                <strong>{courses.reduce((total, course) => total + (course.chapterCount ?? 0), 0)}</strong>
                 <span>Chương học</span>
               </div>
               <div>
-                <strong>100%</strong>
-                <span>Nội dung tiếng Việt</span>
+                <strong>VI/EN</strong>
+                <span>Nội dung tiếng Việt/Tiếng Anh</span>
               </div>
             </div>
           </div>
         </section>
 
-        <section className={styles.courseSection} id="courses">
+        <section className={styles.courseSection}>
           <div className="container">
             <div className={styles.sectionHeading}>
               <div>
                 <span className={styles.sectionEyebrow}>BẮT ĐẦU HỌC</span>
-                <Heading as="h2">Chủ đề học tập trọng tâm</Heading>
+                <Heading as="h2" id="courses">Chủ đề học tập trọng tâm</Heading>
                 <p>Chọn một môn để xem mục lục và bắt đầu từ chương đầu tiên.</p>
               </div>
-              <Link className={styles.textLink} to="/docs/category/toan-roi-rac">
+              {/* <Link className={styles.textLink} to="#courses">
                 Xem tất cả môn học <Icon name="arrow" size={17} />
-              </Link>
+              </Link> */}
             </div>
 
             {filteredCourses.length > 0 ? (
@@ -329,18 +335,28 @@ export default function Home(): ReactNode {
                 <Heading as="h2">Chọn môn học và bắt đầu ôn tập hôm nay.</Heading>
                 <p>Mở mục lục để xem các chương và nội dung chi tiết.</p>
                 <div className={styles.ctaButtons}>
-                  <Link className={styles.ctaPrimary} to="/docs/category/toan-roi-rac">
+                  <Link className={styles.ctaPrimary} to="#courses">
                     <Icon name="book" size={17} /> Khám phá môn học
                   </Link>
-                  {/* <Link className={styles.ctaSecondary} to="/docs/category/an-toan-thong-tin">
+                  {/* <Link className={styles.ctaSecondary} to="/docs/category/attt">
                     An toàn thông tin <Icon name="arrow" size={16} />
                   </Link> */}
                 </div>
               </div>
-              {/* <div className={styles.ctaBadge} aria-hidden="true">
-                <Icon name="book" size={34} />
-                <span>Học theo<br />từng bước</span>
-              </div> */}
+              <nav className={styles.ctaCourses} aria-label="Chọn môn học nhanh">
+                {courses.filter((course) => course.chapterCount !== undefined).slice(0, 3).map((course) => (
+                  <Link className={styles.ctaCourse} to={course.href} key={course.title}>
+                    <span className={styles.ctaCourseIcon}>
+                      <Icon name={course.icon} size={19} />
+                    </span>
+                    <span className={styles.ctaCourseText}>
+                      <strong>{course.title}</strong>
+                      <small>{course.chapterCount} chương</small>
+                    </span>
+                    <Icon name="arrow" size={17} />
+                  </Link>
+                ))}
+              </nav>
             </div>
           </div>
         </section>
