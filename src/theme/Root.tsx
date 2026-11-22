@@ -1,4 +1,5 @@
 import React, {useEffect, type ReactNode} from 'react';
+import {Analytics} from '@vercel/analytics/react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 export default function Root({children}: {children: ReactNode}) {
@@ -23,5 +24,10 @@ export default function Root({children}: {children: ReactNode}) {
     return () => observer.disconnect();
   }, [darkIcon, lightIcon]);
 
-  return <>{children}</>;
+  return (
+    <>
+      {children}
+      <Analytics />
+    </>
+  );
 }
